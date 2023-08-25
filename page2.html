@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <title>Responsive Two Columns</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: none;
+        }
+
+        p{
+            font-family: 'EB Garamond', serif;
+            font-size: 20px;
+            line-height: 24px;
+            font-weight: 400;
+
+      }
+
+        h1{
+            font-family: 'EB Garamond', serif;
+            font-size: 20px;
+            line-height: 24px;
+            font-weight: 500;
+
+          }
+
+          .title {
+            padding: 40px;
+            background-color: #ffffff;
+            color: black;
+            text-align: left;
+            width: 20%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: left;
+            max-width: 1200px;
+            width: 100%;
+        }
+        .column {
+            width: 48%;
+            padding: 20px;
+            background-color: white;
+            text-align: justify;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                margin: auto;
+            }
+            .column {
+                width: 80%;
+                margin: 5% 0;
+
+            }
+        }
+    </style>
+</head>
+<body>
+  <div class="title">
+        <h1>vigas.works</h1>
+    </div>
+    <div class="container">
+        <div class="column">
+            <p><i>Objects for the unordinary life</i>. Vigas.works is a project that aims to enchance the characteristics of everyday objects, whether improving their funcionality, quality or appearance. It's the result of the mix of curiosity with experimentation. During the process of developing and manufacturing the first official collection, several objects have already been created, they're generally given to family and friends.</p>
+            <p>The goal is to reach a high level of quality both in materials and manufacturing processes and to not forget enjoying every step of making each product. You can subscribe in the 4th page to be notified when the wheel starts moving. Also, you can contact me in case you want to discuss any idea, I'm always open to it!</p>
+
+
+        </div>
+        <div class="column">
+            <h1> </h1>
+            <p>You can subscribe here to be notified when the wheel starts moving. 2023 to ????. Also, you can contact me in case you want to discuss any idea, I'm always open to it!</p>
+        </div>
+    </div>
+</body>
+</html>

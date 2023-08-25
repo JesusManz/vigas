@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <title>Responsive Two Columns</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: none;
+        }
+
+        a.one {
+          ont-family: 'EB Garamond', serif;
+          font-size: 20px;
+          line-height: 24px;
+          font-weight: 400;
+          color: red;
+          text-decoration: underline;
+          text-decoration-color: red;
+
+
+        }
+
+        a.two {
+          ont-family: 'EB Garamond', serif;
+          font-size: 20px;
+          line-height: 24px;
+          font-weight: 500;
+          color: black;
+          text-decoration: none;
+        }
+
+        p{
+            font-family: 'EB Garamond', serif;
+            font-size: 20px;
+            line-height: 24px;
+            font-weight: 400;
+
+      }
+
+        h1{
+            font-family: 'EB Garamond', serif;
+            font-size: 20px;
+            line-height: 24px;
+            font-weight: 500;
+
+          }
+
+          .title {
+            padding: 40px;
+            background-color: #ffffff;
+            color: black;
+            text-align: left;
+            width: 20%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: left;
+            max-width: 1200px;
+            width: 100%;
+        }
+        .column {
+            width: 48%;
+            padding: 20px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img {
+            border: none;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 300px;
+          }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                margin: auto;
+            }
+            .column {
+                width: 80%;
+                margin: 5% 0;
+            }
+        }
+    </style>
+</head>
+<body>
+  <div class="title">
+        <p><a class="two" href="index.html">vigas.works</a></p>
+    </div>
+    <div class="container">
+        <div class="column">
+            <img src="discoweb.png" alt="disco">  </div>
+
+        <div class="column">
+            <img src="vigasweb3.png" alt="disco">  </div>
+            </div>
+    </div>
+</body>
+</html>
