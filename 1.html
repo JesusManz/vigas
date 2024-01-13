@@ -2,315 +2,332 @@
 <html lang="en">
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="favicon.png">
-    <meta property="og:title" content="VIGAS.WORKS">
-    <meta property="og:image" content="favicon.png">
-    <meta property="og:description" content="Objetos para la vida no ordinaria.">
-    <meta property="og:url" content="https://vigasworks.com">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <meta property="og:title" content="DIMANCHE">
+  <meta property="og:image" content="favicon.png">
+  <meta property="og:description" content="DIMANCHE OBJECTS">
+  <meta property="og:url" content="https://dimancheobjects.com">
     <title>1</title>
     <style>
-        body {
-            font-family: helvetica, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fffce6;
+    body {
+        font-family: helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: white;
 
-        }
-        p{
-          font-size: 15px;
-          line-height: 19px;
-          font-weight: 600;
-          color: #442d15;
-
-        }
-        h1{
-          font-size: 15px;
-          line-height: 19px;
-          font-weight: 600;
-          color: grey;
-        }
-        h2{
-          font-size: 16px;
-          line-height: 20px;
-          font-weight: 400;
-        }
-        a.one {
-          font-family: helvetica, sans-serif;
-          font-size: 15px;
-          line-height: 19px;
-          font-weight: 600;
-          color: #442d15;
-          text-decoration: underline;
-          text-decoration-color: #442d15;
-        }
-
-        header {
-
-            height: auto;
-            margin-top: 20px;
-            width: 100%;
-            position: fixed;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-            flex-direction: column;
-
-        }
-        img {
-
-            width: 300px;
-        }
-
-        .header-picture{
-          width: 1000px;
-
-        }
-        .header-picture:hover{
-          filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
-        }
-
-        .circle {
-            width: 50px;
-            height: 50px;
-            background-color: none;
-            border-radius: 50%;
-            border-style: solid;
-            border-width: 1px;
-            border-color: #442d15;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 15px;
-            font-size: 23px;
-            color: #442d15;
-            text-decoration: none;
-
-        }
-        .circle-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            height: 15vh;
-
-        }
-
-        .circle:hover {
-            background-color: none;
-            border-style: solid;
-            border-width: 1px;
-            border-color: red;
-            color: red;
-          }
-
-          .container {
-              max-width: 1000px;
-
-              margin: auto;
-              padding: 40px;
-              padding-top: 310px;
-
-              background-color: #fffce6;
+    }
+    p{
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 500;
+      color: #282828;
 
 
-          }
-
-          .header-text {
-              text-align: center;
-              font-size: 24px;
-              margin-bottom: 5px;
-          }
-
-          .columns {
-              display: flex;
-              flex-wrap: wrap;
-              justify-content: space-between;
-
-
-
-          }
-
-          .column {
-              flex-basis: calc(33.33%);
-              background-color: none;
-              padding: 4px;
-              margin-bottom: 20px;
-              box-sizing: border-box;
-              border: none;
-
-
-
-
-          }
-          .column-picture{
-            width: 100%;
-            height: auto;
-            border: solid 1px black;
-
-          }
-          .column-picture:hover {
-              border-style: solid;
-              border-width: 1px;
-              border-color: red;
+    }
+    h1{
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 700;
+      color:  white;
+      background-color: black;
+    }
+    h2{
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 600;
+      color: red;
+      text-decoration: underline;
+      text-decoration-color:red;
+    }
+    h3{
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 500;
+      color: grey;
     }
 
-        @media (max-width: 768px) {
-            .column {
-                flex-basis: 100%;
-            }
-            .header-picture{
-              width: 550px;
-        }
+    a.one {
+      font-family: helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 600;
+      color: #282828;
+      text-decoration: none;
+    }
+    a.one:hover{
+      text-decoration: underline;
+      text-decoration-color: #010eff;
+      color: #010eff;
+
+    }
+    a.header{
+      font-family: helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 700;
+      color: red;
+      text-decoration: none;
+    }
+    a.aviso{
+      font-family: helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 700;
+      color: white;
+      text-decoration: none;
+      background-color: red;
+
+    }
+
+      .container-header {
+          max-width: 500px;
+          margin: 0 auto;
+          padding-top: 10px;
+          padding-bottom: 1px;
+          display: flex;
+          flex-wrap: wrap;
       }
-        @media (max-width: 430px) {
-
-          .circle {
-              width: 40px;
-              height: 40px;
-              background-color: none;
-              border-radius: 50%;
-              border-style: solid;
-              border-width: 1px;
-              border-color: #442d15;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              margin: 10px;
-              font-size: 15px;
-              color: #442d15;
-              text-decoration: none;
-
-            }
-            .header-picture{
-              width: 300px;
-
-            }
-            .container {
-                max-width: 1000px;
-
-                margin: auto;
-                padding: 40px;
-                padding-top: 230px;
-
-                background-color: #fffce6;
-
-
-            }
-            body {
-                font-family: helvetica, sans-serif;
-                margin: 0;
-                padding: 0;
-                background-color: #fffce6;
-            }
-            p{
-              font-size: 13px;
-              line-height: 19px;
-              font-weight: 600;
-              color: #442d15;
-
-            }
-            h1{
-              font-size: 13px;
-              line-height: 19px;
-              font-weight: 600;
-              color: grey;
-            }
-            h2{
-              font-size: 14px;
-              line-height: 20px;
-              font-weight: 400;
-            }
-            a.one {
-              font-family: helvetica, sans-serif;
-              font-size: 13px;
-              line-height: 19px;
-              font-weight: 600;
-              color: #442d15;
-              text-decoration: underline;
-              text-decoration-color: #442d15;
-            }
-            .column {
-
-                padding: 4px;
-                margin-bottom: 4px;
-
-
-        }
+      .container {
+          max-width: 500px;
+          margin: 0 auto;
+          padding-top: 10px;
+          padding-bottom: 100px;
+          display: flex;
+          flex-wrap: wrap;
+      }
+      .objeto {
+          max-width: 500px;
+          margin: 0 auto;
+          padding-top: 10px;
+          padding-bottom: 50px;
+          display: block;
+      }
+      .column {
+          flex: 1;
+          margin: none;
+          background-color: none;
+          padding: none;
+          text-align: left;
       }
 
 
-    </style>
+
+      img{
+        max-width: inherit;
+        margin-top: 10px;
+
+      }
+      .footer {
+       position: fixed;
+       left: 0;
+       bottom: 0;
+       width: 100%;
+       background-color: none;
+       color: white;
+       text-align: center;
+    }
+
+    .footer-picture{
+      width: 900px;
+      filter: invert(10%) sepia(100%) saturate(6013%) hue-rotate(243deg) brightness(98%) contrast(141%);
+
+          }
+    .footer-picture:hover{
+    filter: none;
+        }
 
 
+
+
+
+ @media (max-width: 768px) {
+     .column {
+         flex-basis: 100%;
+     }
+     .header-picture{
+       width: 550px;
+ }
+}
+ @media (max-width: 430px) {
+
+   .container-header {
+       max-width: 90%;
+
+       margin: auto;
+       padding: 30px;
+       padding-top: 10px;
+       padding-bottom: 10px;
+       margin-bottom: 5px;
+       background-color: white;
+       align-items: left;
+   }
+
+
+   .container {
+       max-width: 90%;
+
+       margin: auto;
+       padding: 30px;
+       padding-top: 10px;
+       margin-bottom: 40px;
+       background-color: white;
+       align-items: center;
+   }
+
+
+   .column {
+       flex: 1;
+       margin: none;
+       background-color: #ffffff;
+       padding: none;
+       text-align: left;
+   }
+
+   body {
+       font-family: helvetica, sans-serif;
+       margin: 0;
+       padding: 0;
+       background-color: none;
+   }
+   p{
+     font-size: 13px;
+     line-height: 19px;
+     font-weight: 500;
+     color: #282828;
+
+   }
+   h1{
+     font-size: 13px;
+     line-height: 19px;
+     font-weight: 600;
+     color: white;
+     background-color: black;
+   }
+   h2{
+     font-size: 13px;
+     line-height: 19px;
+     font-weight: 600;
+     color: red;
+     text-decoration: underline;
+     text-decoration-color:red;
+   }
+   h3{
+     font-size: 13px;
+     line-height: 19px;
+     font-weight: 500;
+     color: grey;
+   }
+   a.one {
+     font-family: helvetica, sans-serif;
+     font-size: 13px;
+     line-height: 19px;
+     font-weight: 600;
+     color: #282828;
+     text-decoration: none;
+
+   }
+   a.one:hover{
+     text-decoration: underline;
+     text-decoration-color: #010eff;
+     color: #010eff;
+   }
+   a.header{
+     font-family: helvetica, sans-serif;
+     font-size: 13px;
+     line-height: 19px;
+     font-weight: 700;
+     color: red;
+     text-decoration: none;
+   }
+   a.aviso{
+     font-family: helvetica, sans-serif;
+     font-size: 13px;
+     line-height: 19px;
+     font-weight: 700;
+     color: white;
+     text-decoration: none;
+     background-color: red;
+
+   }
+   img{
+     max-width: 100%;
+     margin-top: 20px;
+
+   }
+
+
+     .footer-picture{
+       width: 95%;
+
+  }
+     .footer-picture:hover{
+   filter: invert(10%) sepia(100%) saturate(6013%) hue-rotate(243deg) brightness(98%) contrast(141%);
+  }
+}
+
+
+
+
+
+  </style>
 </head>
+<header>
+  <div class="container-header">
+      <div class="column">
+          <a class="aviso" href="/tienda"> </a>
+          <div>
+          <div class="column">
+          <br>
+          <a class="one" href="/1">1 ⟶</a>
+          <br>
+          <a class="one" href="/2">2 ⟶</a>
+          <br>
+          <a class="one" href="/3">3 ⟶</a>
+          </div>
+
+</header>
 <body>
-    <header>
-      <div>
-        <a href="/"><img class="header-picture" src="image/vigas.works marron.svg" alt="LOGO"></a>
-        </div>
-        <div class="circle-container">
-          <a class="circle" href="/1">1</a>
-          <a class="circle" href="/2">2</a>
-          <a class="circle" href="/3">3</a>
-          <a class="circle" href="/4">4</a>
-            </div>
-    </header>
     <div class="container">
 
-      <div class="header-text">
-          <p>ELASTERÍA</p>
-          <hr style="height:1px;border-width:0px;color:black;background-color:black">
-      </div>
-      <div class="columns">
-        <div class="column">
-          <img class="column-picture" src="image/IMG_3065.jpg" alt="elasteria">
+          <p>"MAKING YOUR DAY WORK"</p>
 
+        <div class="objeto">
 
-        </div>
-        <div class="column">
-          <img class="column-picture" src="image/IMG_3050.jpg" alt="elasteria">
+              <h2>Elastería</h2>
+              <img src="image/IMG_3065.jpg" alt="elasteria">
 
-
-              <p>Elastería es la estantería en la que colocas lo imprescindible. Al momento de crearla me la imaginaba al lado de la cama, sujetando tu libro actual o en la entrada de la puerta, colgando de las varillas tus bits and bobs.</p>
-              <p>Si la colocas en un lugar alto puedes colgar abrigos o lo que se te ocurra, aguantará.</p>
-              <p>Lo que hace especial a Elastería es que no hay sujeciones a la vista, el anclaje a la pared no se ve y además me obsesione con que estuviese totalmente pegada a la pared. Lo conseguí, no hay gaps entre Elastería y la pared ni tampoco tornillos a la vista.</p>
-              <p><a class="one" href="https://drive.google.com/drive/folders/1ccNtVIu9RvgO1yZnWh6zNmVyVNgV5oki?usp=sharing" target="_blank" rel="noopener noreferrer">Más imágenes aquí</a>.</p>
-
+              <h3>26/12/2023</h3>
+              <p>Elastería es la estantería en la que colocas lo imprescindible.</p>
+              <p>Al momento de crearla me la imaginaba al lado de la cama, sujetando tu libro actual o en la entrada de la puerta, colgando de las varillas tus bits and bobs.
+              <p>Si la colocas en un lugar alto puedes colgar abrigos o lo que se te ocurra, aguantará.
+              <p>Lo que hace especial a Elastería es que no hay sujeciones a la vista, el anclaje a la pared no se ve y además me obsesione con que estuviese totalmente pegada a la pared. Lo conseguí, no hay gaps entre Elastería y la pared ni tampoco tornillos a la vista.
               <p>Contrachapado de abedul
               <br>Varillas de madera de haya
               <br>Cordón elástico naranja
               <br>L x W x H: 14'5 x 11'5 x 3 cm
               <br>Varillas de 7 cm</p>
 
-              <p><i>Objeto bajo pedido</i></p>
-              <h1>35€</h1>
-              <p><a class="one" href="https://buy.stripe.com/28o5nMcdCesw22caEM" target="_blank" rel="noopener noreferrer">Comprar</a></p>
+              <h3><i>Objeto bajo pedido</i></h3>
+              <h3><i>35€</i></h3>
+
+              <p><a class="one" href="https://buy.stripe.com/28o5nMcdCesw22caEM" target="_blank" rel="noopener noreferrer">Comprar ⟶</a></p>
+
+
+              <img src="image/IMG_3050.jpg" alt="elasteria">
+              <img src="image/IMG_3058.jpg" alt="elasteria">
+              <img src="image/gifelasteria.gif" alt="elasteria">
+
 
         </div>
-        <div class="column">
-          <img class="column-picture" src="image/IMG_3058.jpg" alt="elasteria">
 
+        <div class="objeto">
 
+              <h2>Roblón</h2>
+              <img src="image/roblon1.png" alt="roblon">
 
-      </div>
-  </div>
-
-      <div class="header-text">
-          <p>ROBLÓN</p>
-          <hr style="height:1px;border-width:0px;color:black;background-color:black">
-      </div>
-      <div class="columns">
-        <div class="column">
-          <img class="column-picture" src="image/roblon1.png" alt="roblon">
-
-        </div>
-        <div class="column">
-          <img class="column-picture" src="image/roblon2.png" alt="roblon">
-
+              <h3>10/11/2023</h3>
               <p>Para ese paquete que necesita ser cerrado, o para ese bote que necesita ser estrujado.</p>
               <p>Nunca más los recipientes de tu casa volverán a estar solos, y quizás nunca volverán a encontrar mejor compañía que Roblón.</p>
               <p>Cada Roblón está hecho de un pedazo de roble de mi jardín. No sé si existe un sourcing más local que este. Puedes ver el proceso e incluso <a class="one" href="https://drive.google.com/drive/folders/1XNGsw6_v1wb-ihO62y0L9nT6TcyDySjt?usp=sharing" target="_blank" rel="noopener noreferrer">uno de los trozos de roble aquí</a>.</p>
@@ -319,79 +336,86 @@
               <br>L x W x H: 75 x 20 x 13 mm
               <br>Hendidura de 63 mm</p>
 
-              <p><i>Objeto en stock</i></p>
-              <h1>15€</h1>
-              <p><a class="one" href="https://buy.stripe.com/fZe2bA2D27045eo4gn" target="_blank" rel="noopener noreferrer">Comprar</a></p>
+              <h3><i>Objeto bajo pedido</i></h3>
+              <h3><i>15€</i></h3>
+              <p><a class="one" href="https://buy.stripe.com/fZe2bA2D27045eo4gn" target="_blank" rel="noopener noreferrer">Comprar ⟶</a></p>
+
+              <img src="image/roblon2.png" alt="roblon">
+              <img src="image/roblon3.png" alt="roblon">
+              <img src="image/IMG_1951.JPG" alt="roblon">
+              <h3><i>Un Roblón de viaje:</i></h3>
+              <img src="image/IMG_2818.JPG" alt="roblon">
+              <img src="image/IMG_2819.JPG" alt="roblon">
+              <h3><i>Usos alternativos del Roblón:</i></h3>
+              <img src="image/IMG_3016.JPG" alt="roblon">
+
 
         </div>
-        <div class="column">
-          <img class="column-picture" src="image/roblon3.png" alt="roblon">
+
+        <div class="objeto">
+
+              <h2>Allen Hooks</h2>
+
+              <img src="image/allenhook3.jpg" alt="allen">
+
+              <h3>15/10/2023</h3>
+              <p>A tool as a new tool.</p>
+              <p>Con los allen hooks pretendo dar una nueva perspectiva a un objeto que todos conocemos. He reinterpretado su función convierténdolos en perchero, respaldándome en su forma, que me recuerda a una escarpia en forma de 'L'.</p>
+              <p>Cada allen ha sido soldada a un tornillo, lijada, pintada y barnizada. Puedes comprarlos en el pack de 3 tamaños diferentes o por separado.</p>
+              <p>Por si hay dudas sobre cuánto peso aguantan me colgué de uno y ni se inmutó.</p>
+              <p>Puedes ver más imágenes del proceso <a class="one" href="https://drive.google.com/drive/folders/1XaUCiT7_YtNFkcK6Fo4svzBNbG4mM_7S?usp=sharing" target="_blank" rel="noopener noreferrer">aquí</a>.</p>
+              <p>Llaves allen de acero de 10, 8 y 6mm<br>Color Ral 5002<br></p>
+              <h3><i>Objeto bajo pedido</i></h3>
+              <h3><i>15€/ud. o 40€/pack de 3ud.</i></h3>
+              <p><a class="one" href="https://buy.stripe.com/7sI2bA91qbgkfT228d" target="_blank" rel="noopener noreferrer">Comprar unidad ⟶</a></p>
+              <p><a class="one" href="https://buy.stripe.com/fZe8zY7Xm2JOdKU6ou" target="_blank" rel="noopener noreferrer">Comprar pack ⟶</a></p>
+
+
+              <img src="image/allenhook2.png" alt="allen">
+              <img src="image/allenhook1.png" alt="allen">
+              <img src="image/IMG_1190.JPG" alt="allen">
+              <img src="image/rallador.png" alt="allen">
+
+              <h3><i>  Llave allen + tornillo = Allen Hook:</i></h3>
+              <img src="image/IMG_9861.jpg" alt="allen">
+
+
+        </div>
+
+        <div class="objeto">
+
+              <h2>Mesibanc</h2>
+              <img src="image/mesibanc3.jpeg" alt="mesibanc">
+
+              <h3>17/09/2023</h3>
+              <p>Concebido como una mesa auxiliar para la cama o el sofá pero con la solidez suficiente para ser usado como banco, de ahí su nombre, mesibanc.</p>
+              <p>Cuando se me ocurrió la idea pensé en cómo podría diferenciar los espacios en el mueble, quería que pudiera guardar mis libros y libretas (objetos que siempre tengo alrededor). Lo que se me ocurrió fue dividir el espacio con las varillas, pensé que la parte de abajo debería tener altura suficiente como para depositar un libro en vertical y las varillas ser un lugar de almacenamiento temporal, por ejemplo para guardar el libro que estoy leyendo actualmente o mi libreta de ideas. La tercera parte (la parte superior) es más ancha para servir mejor como asiento, o para poner tu lámpara de noche, o tu vela, o tu incienso, o todo lo que quieras a la vez.</p>
+              <p>Contrachapado de abedul
+                <br>Varilla roscada
+                <br>Uniones ocultas
+                <br>L x W x H: 38 x 24'5 x 40 cm
+                <br>Espesor de 3cm</p>
+
+
+                <h3><i>Objeto bajo pedido</i></h3>
+                <h3><i>165€</i></h3>
+
+              <p><a class="one" href="https://buy.stripe.com/dR603s4LafwAgX66os" target="_blank" rel="noopener noreferrer">Comprar ⟶</a></p>
+
+              <img src="image/mesibanc.jpeg" alt="mesibanc">
+              <img src="image/mesibanc2.jpeg" alt="mesibanc">
+              <img src="image/IMG_8426.JPG" alt="mesibanc">
+              <img src="image/IMG_8860.JPG" alt="mesibanc">
+              <img src="image/IMG_9189 2.JPG" alt="mesibanc">
+
+        </div>
 
       </div>
-  </div>
-          <div class="header-text">
-              <p>ALLEN HOOKS</p>
-              <hr style="height:1px;border-width:0px;color:black;background-color:black">
-          </div>
-          <div class="columns">
-            <div class="column">
-              <img class="column-picture" src="image/allenhook1.png" alt="allen hook">
 
-            </div>
-            <div class="column">
-              <img class="column-picture" src="image/allenhook2.png" alt="allen hook">
-                  <p>A tool as a new tool.</p>
-                  <p>Con los allen hooks pretendo dar una nueva perspectiva a un objeto que todos conocemos. He reinterpretado su función convierténdolos en perchero, respaldándome en su forma, que me recuerda a una escarpia en forma de 'L'.</p>
-                  <p>Cada allen ha sido soldada a un tornillo, lijada, pintada y barnizada. Puedes comprarlos en el pack de 3 tamaños diferentes o por separado.</p>
-                  <p>Por si hay dudas sobre cuánto peso aguantan me colgué de uno y ni se inmutó.</p>
-                  <p>Puedes ver más imágenes del proceso <a class="one" href="https://drive.google.com/drive/folders/1XaUCiT7_YtNFkcK6Fo4svzBNbG4mM_7S?usp=sharing" target="_blank" rel="noopener noreferrer">aquí</a>.</p>
-                  <p>Llaves allen de acero de 10, 8 y 6mm<br>Color Ral 5002<br></p>
-                  <p><i>Objeto en stock</i></p>
-                  <h1>15€/ud. o 40€/pack de 3ud.</h1>
-                  <p><a class="one" href="https://buy.stripe.com/7sI2bA91qbgkfT228d" target="_blank" rel="noopener noreferrer">Comprar unidad</a></p>
-                  <p><a class="one" href="https://buy.stripe.com/fZe8zY7Xm2JOdKU6ou" target="_blank" rel="noopener noreferrer">Comprar pack</a></p>
-            </div>
-            <div class="column">
-              <img class="column-picture" src="image/allenhook3.jpg" alt="allen hook">
 
-          </div>
-      </div>
-      <div class="header-text">
-            <p>MESIBANC</p>
-            <hr style="height:1px;border-width:0px;color:black;background-color:black">
-        </div>
-        <div class="columns">
-          <div class="column">
-            <img class="column-picture" src="image/mesibanc3.jpeg" alt="mesibanc">
-
-          </div>
-          <div class="column">
-            <img class="column-picture" src="image/mesibanc.jpeg" alt="mesibanc">
-                <p>Concebido como una mesa auxiliar para la cama o el sofá pero con la solidez suficiente para ser usado como banco, de ahí su nombre, mesibanc.</p>
-                <p>Cuando se me ocurrió la idea pensé en cómo podría diferenciar los espacios en el mueble, quería que pudiera guardar mis libros y libretas (objetos que siempre tengo alrededor). Lo que se me ocurrió fue dividir el espacio con las varillas, pensé que la parte de abajo debería tener altura suficiente como para depositar un libro en vertical y las varillas ser un lugar de almacenamiento temporal, por ejemplo para guardar el libro que estoy leyendo actualmente o mi libreta de ideas. La tercera parte (la parte superior) es más ancha para servir mejor como asiento, o para poner tu lámpara de noche, o tu vela, o tu incienso, o todo lo que quieras a la vez.</p>
-                <p>Contrachapado de abedul<br>Varilla roscada<br>Uniones ocultas<br>L x W x H: 38 x 24'5 x 40 cm<br>Espesor de 3cm</p>
-                <p><i>Objeto bajo pedido</i></p>
-                <h1>165€</h1>
-                <p><a class="one" href="https://buy.stripe.com/dR603s4LafwAgX66os" target="_blank" rel="noopener noreferrer">Comprar</a></p>
-          </div>
-          <div class="column">
-            <img class="column-picture" src="image/mesibanc2.jpeg" alt="mesibanc">
-
-        </div>
+    <div class="footer">
+      <a href="/"><img class="footer-picture" src="image/vigas.works marron.svg" alt="LOGOs"></a>
     </div>
 
-
-
-
-<div class="header-text">
-<p>MÁS OBJETOS PRONTO</p>
-<p>RECIBE UN AVISO EN ESTE <a class="one" href="https://vigasworks.mataroa.blog/newsletter/" target="_blank" rel="noopener noreferrer">MAILING LIST</a>. SOLO AVISOS, NADA MÁS</p>
-
-<p>"MAKING YOUR DAY WORK"</p>
-
-
-
-</div>
-</div>
 </body>
-</html>
+</html

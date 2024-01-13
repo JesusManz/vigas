@@ -2,294 +2,311 @@
 <html lang="en">
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="favicon.png">
-    <meta property="og:title" content="VIGAS.WORKS">
-    <meta property="og:image" content="favicon.png">
-    <meta property="og:description" content="Objetos para la vida no ordinaria.">
-    <meta property="og:url" content="https://vigasworks.com">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <meta property="og:title" content="DIMANCHE">
+  <meta property="og:image" content="favicon.png">
+  <meta property="og:description" content="DIMANCHE OBJECTS">
+  <meta property="og:url" content="https://dimancheobjects.com">
     <title>0</title>
     <style>
-        body {
-            font-family: helvetica, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fffce6;
+    body {
+        font-family: helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: white;
 
-        }
-        p{
-          font-size: 15px;
-          line-height: 19px;
-          font-weight: 600;
-          color: #442d15;
-
-        }
-        h1{
-          font-size: 15px;
-          line-height: 19px;
-          font-weight: 600;
-          color: grey;
-        }
-        h2{
-          font-size: 16px;
-          line-height: 20px;
-          font-weight: 400;
-        }
-        a.one {
-          font-family: helvetica, sans-serif;
-          font-size: 15px;
-          line-height: 19px;
-          font-weight: 600;
-          color: #442d15;
-          text-decoration: underline;
-          text-decoration-color: #442d15;
-        }
-
-        header {
-
-            height: auto;
-            margin-top: 20px;
-            width: 100%;
-            position: fixed;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-            flex-direction: column;
-
-        }
-        img {
-
-            width: 300px;
-        }
-
-        .header-picture{
-          width: 1000px;
-
-        }
-        .header-picture:hover{
-          filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
-        }
-
-        .circle {
-            width: 50px;
-            height: 50px;
-            background-color: none;
-            border-radius: 50%;
-            border-style: solid;
-            border-width: 1px;
-            border-color: #442d15;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 15px;
-            font-size: 23px;
-            color: #442d15;
-            text-decoration: none;
-
-        }
-        .circle-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            height: 15vh;
-
-        }
-
-        .circle:hover {
-            background-color: none;
-            border-style: solid;
-            border-width: 1px;
-            border-color: red;
-            color: red;
-          }
-
-          .container {
-              max-width: 1000px;
-
-              margin: auto;
-              padding: 40px;
-              padding-top: 310px;
-
-              background-color: #fffce6;
+    }
+    p{
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 500;
+      color: #282828;
 
 
-          }
-
-          .header-text {
-              text-align: center;
-              font-size: 24px;
-              margin-bottom: 5px;
-          }
-
-          .columns {
-              display: flex;
-              flex-wrap: wrap;
-              justify-content: space-between;
-
-
-
-          }
-
-          .column {
-              flex-basis: calc(33.33%);
-              background-color: none;
-              padding: 4px;
-              margin-bottom: 20px;
-              box-sizing: border-box;
-              border: none;
-
-
-
-
-          }
-          .column-picture{
-            width: 100%;
-            height: auto;
-            border: solid 1px black;
-
-          }
-          .column-picture:hover {
-              border-style: solid;
-              border-width: 1px;
-              border-color: red;
+    }
+    h1{
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 700;
+      color:  white;
+      background-color: black;
+    }
+    h2{
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 600;
+      color: red;
+      text-decoration: underline;
+      text-decoration-color:red;
+    }
+    h3{
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 500;
+      color: grey;
     }
 
-        @media (max-width: 768px) {
-            .column {
-                flex-basis: 100%;
-            }
-            .header-picture{
-              width: 550px;
-        }
+    a.one {
+      font-family: helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 600;
+      color: #282828;
+      text-decoration: none;
+    }
+    a.one:hover{
+      text-decoration: underline;
+      text-decoration-color: #010eff;
+      color: #010eff;
+
+    }
+    a.header{
+      font-family: helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 700;
+      color: red;
+      text-decoration: none;
+    }
+    a.aviso{
+      font-family: helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 700;
+      color: white;
+      text-decoration: none;
+      background-color: red;
+
+    }
+
+      .container-header {
+          max-width: 500px;
+          margin: 0 auto;
+          padding-top: 10px;
+          padding-bottom: 1px;
+          display: flex;
+          flex-wrap: wrap;
       }
-        @media (max-width: 430px) {
-
-          .circle {
-              width: 40px;
-              height: 40px;
-              background-color: none;
-              border-radius: 50%;
-              border-style: solid;
-              border-width: 1px;
-              border-color: #442d15;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              margin: 10px;
-              font-size: 15px;
-              color: #442d15;
-              text-decoration: none;
-
-            }
-            .header-picture{
-              width: 300px;
-
-            }
-            .container {
-                max-width: 1000px;
-
-                margin: auto;
-                padding: 40px;
-                padding-top: 230px;
-
-                background-color: #fffce6;
-
-
-            }
-            body {
-                font-family: helvetica, sans-serif;
-                margin: 0;
-                padding: 0;
-                background-color: #fffce6;
-            }
-            p{
-              font-size: 13px;
-              line-height: 19px;
-              font-weight: 600;
-              color: #442d15;
-
-            }
-            h1{
-              font-size: 13px;
-              line-height: 19px;
-              font-weight: 600;
-              color: grey;
-            }
-            h2{
-              font-size: 14px;
-              line-height: 20px;
-              font-weight: 400;
-            }
-            a.one {
-              font-family: helvetica, sans-serif;
-              font-size: 13px;
-              line-height: 19px;
-              font-weight: 600;
-              color: #442d15;
-              text-decoration: underline;
-              text-decoration-color: #442d15;
-            }
-            .column {
-
-                padding: 4px;
-                margin-bottom: 4px;
-
-
-        }
+      .container {
+          max-width: 500px;
+          margin: 0 auto;
+          padding-top: 10px;
+          padding-bottom: 50px;
+          display: flex;
+          flex-wrap: wrap;
+      }
+      .objeto {
+          max-width: 500px;
+          margin: 0 auto;
+          padding-top: 10px;
+          padding-bottom: 50px;
+          display: block;
+      }
+      .column {
+          flex: 1;
+          margin: none;
+          background-color: none;
+          padding: none;
+          text-align: left;
       }
 
 
-    </style>
+
+      img{
+        max-width: inherit;
+        margin-top: 10px;
+
+      }
+      .footer {
+       position: fixed;
+       left: 0;
+       bottom: 0;
+       width: 100%;
+       background-color: none;
+       color: white;
+       text-align: center;
+    }
+
+    .footer-picture{
+      width: 900px;
+      filter: invert(10%) sepia(100%) saturate(6013%) hue-rotate(243deg) brightness(98%) contrast(141%);
+
+          }
+    .footer-picture:hover{
+    filter: none;
+        }
 
 
+
+
+
+ @media (max-width: 768px) {
+     .column {
+         flex-basis: 100%;
+     }
+     .header-picture{
+       width: 550px;
+ }
+}
+ @media (max-width: 430px) {
+
+   .container-header {
+       max-width: 90%;
+
+       margin: auto;
+       padding: 30px;
+       padding-top: 10px;
+       padding-bottom: 10px;
+       margin-bottom: 5px;
+       background-color: white;
+       align-items: left;
+   }
+
+
+   .container {
+       max-width: 90%;
+
+       margin: auto;
+       padding: 30px;
+       padding-top: 10px;
+       margin-bottom: 40px;
+       background-color: white;
+       align-items: center;
+   }
+
+
+   .column {
+       flex: 1;
+       margin: none;
+       background-color: #ffffff;
+       padding: none;
+       text-align: left;
+   }
+
+   body {
+       font-family: helvetica, sans-serif;
+       margin: 0;
+       padding: 0;
+       background-color: none;
+   }
+   p{
+     font-size: 13px;
+     line-height: 19px;
+     font-weight: 500;
+     color: #282828;
+
+   }
+   h1{
+     font-size: 13px;
+     line-height: 19px;
+     font-weight: 600;
+     color: white;
+     background-color: black;
+   }
+   h2{
+     font-size: 13px;
+     line-height: 19px;
+     font-weight: 600;
+     color: red;
+     text-decoration: underline;
+     text-decoration-color:red;
+   }
+   h3{
+     font-size: 13px;
+     line-height: 19px;
+     font-weight: 500;
+     color: grey;
+   }
+   a.one {
+     font-family: helvetica, sans-serif;
+     font-size: 13px;
+     line-height: 19px;
+     font-weight: 600;
+     color: #282828;
+     text-decoration: none;
+
+   }
+   a.one:hover{
+     text-decoration: underline;
+     text-decoration-color: #010eff;
+     color: #010eff;
+   }
+   a.header{
+     font-family: helvetica, sans-serif;
+     font-size: 13px;
+     line-height: 19px;
+     font-weight: 700;
+     color: red;
+     text-decoration: none;
+   }
+   a.aviso{
+     font-family: helvetica, sans-serif;
+     font-size: 13px;
+     line-height: 19px;
+     font-weight: 700;
+     color: white;
+     text-decoration: none;
+     background-color: red;
+
+   }
+   img{
+     max-width: 100%;
+     margin-top: 20px;
+
+   }
+
+
+     .footer-picture{
+       width: 95%;
+
+  }
+     .footer-picture:hover{
+   filter: invert(10%) sepia(100%) saturate(6013%) hue-rotate(243deg) brightness(98%) contrast(141%);
+  }
+}
+
+
+
+
+
+  </style>
 </head>
+<header>
+  <div class="container-header">
+      <div class="column">
+          <a class="aviso" href="/tienda"> </a>
+          <div>
+          <div class="column">
+          <br>
+          <a class="one" href="/1">1 ⟶</a>
+          <br>
+          <a class="one" href="/2">2 ⟶</a>
+          <br>
+          <a class="one" href="/3">3 ⟶</a>
+          </div>
+
+</header>
 <body>
-    <header>
-      <div>
-          <a href="/"><img class="header-picture" src="image/vigas.works marron.svg" alt="LOGO"></a>
-          </div>
-          <div class="circle-container">
-            <a class="circle" href="/1">1</a>
-            <a class="circle" href="/2">2</a>
-            <a class="circle" href="/3">3</a>
-            <a class="circle" href="/4">4</a>
-              </div>
-    </header>
     <div class="container">
-        <div class="header-text">
-            <p>ELASTERÍA</p>
-            <hr style="height:1px;border-width:0px;color:black;background-color:black">
-            <img class="column-picture" src="image/IMG_3010.jpg" alt="elastería">
-
-
-        </div>
-        <div class="columns">
-          <div class="column">
-
-
-          </div>
-          <div class="column">
 
 
 
-          </div>
-          <div class="column">
+        <div class="objeto">
 
 
-        </div>
+              <img src="image/floppy disk.png" alt="intro">
+
+
+
+
+      </div>
+
+
+    <div class="footer">
+      <a href="/"><img class="footer-picture" src="image/vigas.works marron.svg" alt="LOGOs"></a>
     </div>
 
-<div class="header-text">
-
-<p>"MAKING YOUR DAY WORK"</p>
-
-
-
-</div>
-</div>
 </body>
-</html>
+</html
