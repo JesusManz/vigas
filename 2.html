@@ -78,7 +78,22 @@
       color: white;
       text-decoration: none;
       background-color: red;
-
+    }
+    a.index{
+      font-family: helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 700;
+      color: blue;
+      text-decoration: none;
+    }
+    a.index:hover{
+      font-family: helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 700;
+      color: red;
+      text-decoration: none;
     }
 
       .container-header {
@@ -95,7 +110,7 @@
           padding-top: 10px;
           padding-bottom: 100px;
           display: flex;
-          flex-wrap: wrap;
+          flex-direction: column;
       }
       .objeto {
           max-width: 500px;
@@ -174,7 +189,9 @@
        padding-top: 10px;
        margin-bottom: 40px;
        background-color: white;
-       align-items: center;
+       align-items: left;
+       display: flex;
+       flex-direction: column;
    }
 
 
@@ -250,8 +267,24 @@
      color: white;
      text-decoration: none;
      background-color: red;
-
    }
+   a.index{
+     font-family: helvetica, sans-serif;
+     font-size: 13px;
+     line-height: 19px;
+     font-weight: 700;
+     color: blue;
+     text-decoration: none;
+   }
+   a.index:hover{
+     font-family: helvetica, sans-serif;
+     font-size: 13px;
+     line-height: 19px;
+     font-weight: 700;
+     color: red;
+     text-decoration: none;
+   }
+
    img{
      max-width: 100%;
      margin-top: 1px;
@@ -294,9 +327,21 @@
 
         <p><b>"NOT FOR SALE"</b></p>
         <p>Una colección de cosas que he hecho a lo largo del tiempo, hay muchas más por supuesto pero solo quiero reunir algunas aquí. Algunas no representan una complejidad especial pero si representan algo importante para mí, ya sea por el momento en el que lo hice o por el proceso. Los objetos están agrupados por año, y como dice el título de la sección, no están a la venta.</p>
+        <div class="column">
+            <p><b>Índice por años</b></p>
 
+            <a class="index" href="#2024">2024</a>
+            <br>
+            <a class="index" href="#2023">2023</a>
+            <br>
+            <a class="index" href="#2022">2022</a>
+            <br>
+            <a class="index" href="#2021">2021</a>
+            <br>
+            <a class="index" href="#2020">2020</a>
+            </div>
         <div class="objeto">
-              <h2>2024</h2>
+              <h2 id="2024">2024</h2>
               <h3>31/01/2024</h3>
               <p>Micah Lexier publicó hace unas semanas en IG que el que quisiera podía formar parte de una nueva exposición en la que estaba trabajando. Le escribí para saber más y me dijo que para participar había que enviar una postal a la dirección que te indicaba con el mensaje que él te decía.
               <p>Me hace mucha ilusión participar en uno de sus proyectos así que lo hice sin dudarlo. Me encanta él como artista y como persona, así que I'm really honored to take part in this.
@@ -327,7 +372,7 @@
 
       </div>
       <div class="objeto">
-            <h2>2023</h2>
+            <h2 id="2023">2023</h2>
             <p>Estantería con varilla roscada, surgió a partir de querer extender el concepto del Mesibanc (varilla roscada como base) a otros objetos.</p>
             <img class="column-picture" src="image/IMG_1049.JPG" alt="estantería">
             <p>Este candelabro surgió de la misma manera, a partir del Mesibanc.</p>
@@ -357,7 +402,7 @@
 
     </div>
     <div class="objeto">
-            <h2>2022</h2>
+            <h2 id="2022">2022</h2>
 
 
             <p>Piedra porta inciensos</p>
@@ -378,7 +423,7 @@
   </div>
 
   <div class="objeto">
-          <h2>2021</h2>
+          <h2 id="2021">2021</h2>
           <p>Conjunto en contrachapado. Funny enough después de hacer la silla vi que Zara home había hecho una muy similar, did that mean anything?</p>
           <img class="column-picture" src="image/IMG_4524.JPG" alt="conjunto">
           <hr color="red" size="1px" align="center" />
@@ -402,7 +447,7 @@
           <img class="column-picture" src="2/compr/butaca3.JPG" alt="conjunto">
 
     <div class="objeto">
-            <h2>2020</h2>
+            <h2 id="2020">2020</h2>
 
             <p>Este mueble tiene un sitio especial en mí. Me lo pidió Emily, para poner libros y cositas. Por aquel entonces solo tenía una sierra de calar prestada por mi suegro y un destornillador de estrella. Corté la madera en la cocina, te puedes imaginar el burbujón a serrín. Y para atornillarlo una aventura, sin taladro y haciendo los agujeros a la fuerza con el tornillo y el destornillador. Obviamente las uniones son con escuadras, no había otra manera por aquel entonces. Cuatro años más tarde y cuatro mudanzas más tarde, still standing!</p>
             <img class="column-picture" src="2/compr/primero.JPG" alt="conjunto">

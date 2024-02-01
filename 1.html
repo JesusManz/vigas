@@ -78,7 +78,22 @@
       color: white;
       text-decoration: none;
       background-color: red;
-
+    }
+    a.index{
+      font-family: helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 700;
+      color: blue;
+      text-decoration: none;
+    }
+    a.index:hover{
+      font-family: helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 700;
+      color: red;
+      text-decoration: none;
     }
 
       .container-header {
@@ -95,7 +110,7 @@
           padding-top: 10px;
           padding-bottom: 100px;
           display: flex;
-          flex-wrap: wrap;
+          flex-direction: column;
       }
       .objeto {
           max-width: 500px;
@@ -173,7 +188,9 @@
        padding-top: 10px;
        margin-bottom: 40px;
        background-color: white;
-       align-items: center;
+       align-items: left;
+       display: flex;
+       flex-direction: column;
    }
 
 
@@ -249,8 +266,24 @@
      color: white;
      text-decoration: none;
      background-color: red;
-
    }
+   a.index{
+     font-family: helvetica, sans-serif;
+     font-size: 13px;
+     line-height: 19px;
+     font-weight: 700;
+     color: blue;
+     text-decoration: none;
+   }
+   a.index:hover{
+     font-family: helvetica, sans-serif;
+     font-size: 13px;
+     line-height: 19px;
+     font-weight: 700;
+     color: red;
+     text-decoration: none;
+   }
+
    img{
      max-width: 100%;
      margin-top: 20px;
@@ -294,9 +327,24 @@
 
           <p><b>"MAKING YOUR DAY WORK"</b></p>
 
+          <div class="column">
+              <p><b>Índice de objetos</b></p>
+
+              <a class="index" href="#toolbox">Toolbox</a>
+              <br>
+              <a class="index" href="#elasteria">Elastería</a>
+              <br>
+              <a class="index" href="#roblon">Roblón</a>
+              <br>
+              <a class="index" href="#allenhooks">Allen Hooks</a>
+              <br>
+              <a class="index" href="#mesibanc">Mesibanc</a>
+              </div>
+
+
           <div class="objeto">
 
-                <h2>Toolbox</h2>
+                <h2 id="toolbox">Toolbox</h2>
                 <img src="1/compr/IMG_2642 3.JPG" alt="toolbox">
 
                 <h3>29/01/2024</h3>
@@ -330,7 +378,7 @@
 
         <div class="objeto">
 
-              <h2>Elastería</h2>
+              <h2 id="elasteria">Elastería</h2>
               <img src="image/IMG_3065.jpg" alt="elasteria">
 
               <h3>26/12/2023</h3>
@@ -359,7 +407,7 @@
 
         <div class="objeto">
 
-              <h2>Roblón</h2>
+              <h2 id="roblon">Roblón</h2>
               <img src="image/roblon1.png" alt="roblon">
 
               <h3>10/11/2023</h3>
@@ -389,7 +437,7 @@
 
         <div class="objeto">
 
-              <h2>Allen Hooks</h2>
+              <h2 id="allenhooks">Allen Hooks</h2>
 
               <img src="image/allenhook3.jpg" alt="allen">
 
@@ -419,7 +467,7 @@
 
         <div class="objeto">
 
-              <h2>Mesibanc</h2>
+              <h2 id="mesibanc">Mesibanc</h2>
               <img src="image/mesibanc3.jpeg" alt="mesibanc">
 
               <h3>17/09/2023</h3>
