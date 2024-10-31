@@ -9,346 +9,104 @@
   <meta property="og:image" content="favicon.png">
   <meta property="og:description" content="VIGAS.WORKS">
   <meta property="og:url" content="https://vigasworks.com">
+  <link rel="stylesheet" href="stylesheet.css">
     <title>3</title>
-    <style>
-    body {
-        font-family: helvetica, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: white;
-
-    }
-    p{
-      font-size: 16px;
-      line-height: 20px;
-      font-weight: 500;
-      color: #282828;
-
-
-    }
-    h1{
-      font-size: 16px;
-      line-height: 20px;
-      font-weight: 700;
-      color:  white;
-      background-color: black;
-    }
-    h2{
-      font-size: 16px;
-      line-height: 20px;
-      font-weight: 600;
-      color: red;
-      text-decoration: underline;
-      text-decoration-color:red;
-    }
-    h3{
-      font-size: 16px;
-      line-height: 20px;
-      font-weight: 500;
-      color: grey;
-    }
-
-    a.one {
-      font-family: helvetica, sans-serif;
-      font-size: 16px;
-      line-height: 20px;
-      font-weight: 600;
-      color: #282828;
-      text-decoration: none;
-    }
-    a.one:hover{
-      text-decoration: underline;
-      text-decoration-color: #010eff;
-      color: #010eff;
-
-    }
-    a.header{
-      font-family: helvetica, sans-serif;
-      font-size: 16px;
-      line-height: 20px;
-      font-weight: 700;
-      color: red;
-      text-decoration: none;
-    }
-    a.aviso{
-      font-family: helvetica, sans-serif;
-      font-size: 16px;
-      line-height: 20px;
-      font-weight: 700;
-      color: white;
-      text-decoration: none;
-      background-color: red;
-
-    }
-
-      .container-header {
-          max-width: 500px;
-          margin: 0 auto;
-          padding-top: 10px;
-          padding-bottom: 1px;
-          display: flex;
-          flex-wrap: wrap;
-      }
-      .container {
-          max-width: 500px;
-          margin: 0 auto;
-          padding-top: 10px;
-          padding-bottom: 140px;
-          display: flex;
-          flex-wrap: wrap;
-      }
-      .objeto {
-          max-width: 500px;
-          margin: 0 auto;
-
-          display: block;
-      }
-      .column {
-          flex: 1;
-          margin: none;
-          background-color: none;
-          padding: none;
-          text-align: left;
-      }
-
-
-
-      img{
-        max-width: inherit;
-        margin-top: 10px;
-
-      }
-      .footer {
-       position: fixed;
-       left: 0;
-       bottom: 0;
-       width: 100%;
-       background-color: none;
-       color: white;
-       text-align: center;
-    }
-
-    .footer-picture{
-      width: 900px;
-      filter: invert(10%) sepia(100%) saturate(6013%) hue-rotate(243deg) brightness(98%) contrast(141%);
-
-          }
-    .footer-picture:hover{
-    filter: none;
-        }
-
-
-
-
-
- @media (max-width: 768px) {
-     .column {
-         flex-basis: 100%;
-     }
-     .header-picture{
-       width: 550px;
- }
-}
- @media (max-width: 430px) {
-
-   .container-header {
-       max-width: 90%;
-
-       margin: auto;
-       padding: 30px;
-       padding-top: 10px;
-       padding-bottom: 10px;
-       margin-bottom: 5px;
-       background-color: white;
-       align-items: left;
-   }
-
-
-   .container {
-       max-width: 90%;
-
-       margin: auto;
-       padding: 30px;
-       padding-top: 10px;
-       margin-bottom: 40px;
-       background-color: white;
-       align-items: center;
-   }
-
-
-   .column {
-       flex: 1;
-       margin: none;
-       background-color: #ffffff;
-       padding: none;
-       text-align: left;
-   }
-
-   body {
-       font-family: helvetica, sans-serif;
-       margin: 0;
-       padding: 0;
-       background-color: none;
-   }
-   p{
-     font-size: 13px;
-     line-height: 19px;
-     font-weight: 500;
-     color: #282828;
-
-   }
-   h1{
-     font-size: 13px;
-     line-height: 19px;
-     font-weight: 600;
-     color: white;
-     background-color: black;
-   }
-   h2{
-     font-size: 13px;
-     line-height: 19px;
-     font-weight: 600;
-     color: red;
-     text-decoration: underline;
-     text-decoration-color:red;
-   }
-   h3{
-     font-size: 13px;
-     line-height: 19px;
-     font-weight: 500;
-     color: grey;
-   }
-   a.one {
-     font-family: helvetica, sans-serif;
-     font-size: 13px;
-     line-height: 19px;
-     font-weight: 600;
-     color: #282828;
-     text-decoration: none;
-
-   }
-   a.one:hover{
-     text-decoration: underline;
-     text-decoration-color: #010eff;
-     color: #010eff;
-   }
-   a.header{
-     font-family: helvetica, sans-serif;
-     font-size: 13px;
-     line-height: 19px;
-     font-weight: 700;
-     color: red;
-     text-decoration: none;
-   }
-   a.aviso{
-     font-family: helvetica, sans-serif;
-     font-size: 13px;
-     line-height: 19px;
-     font-weight: 700;
-     color: white;
-     text-decoration: none;
-     background-color: red;
-
-   }
-   img{
-     max-width: 100%;
-     margin-top: 20px;
-
-   }
-
-
-     .footer-picture{
-       width: 95%;
-
-  }
-     .footer-picture:hover{
-   filter: invert(10%) sepia(100%) saturate(6013%) hue-rotate(243deg) brightness(98%) contrast(141%);
-  }
-}
-
-
-
-
-
-  </style>
 </head>
 <header>
-  <div class="container-header">
-      <div class="column">
-          <a class="aviso" href="/tienda"> </a>
-          <div>
-          <div class="column">
-            <br>
-            <a class="one" href="/1">1 ⟶</a>
-            <br>
-            <a class="one" href="/2">2 ⟶</a>
-            <br>
-            <a class="one" href="/3">3 ⟶</a>
-            </div>
+
+    <div class="header">
+        <div class="header-item"><a class="one" href="/1">1. tienda</a></div>
+        <div class="header-item"><a class="one" href="/2">2. exploración</a></div>
+        <div class="header-item"><a class="one" href="/3">3. sobre vigas.works</a></div>
+        <div class="header-item"><a class="one" href="/4">4. objetos a medida</a></div>
+        <div class="header-item"><a class="one" href="/5">5. diario</a></div>
+        <div class="header-item"><a class="one" href="mailto:j@vigasworks.com">mail</a></div>
+        <div class="header-item"><a class="one" href="https://www.instagram.com/vigas.works/" target="_blank" rel="noopener noreferrer">ig</a></div>
+      </div>
 
 </header>
+
 <body>
-    <div class="container">
+    <div class="container-producto">
+     
+        <div class="left-side">
+            <div class="text">
+            <p><u>Objects for the unordinary life.</u></p>
+            <p>
+                Creo objetos con la premisa de que pueda fabricarlos yo mismo, principalmente con las herramientas y materiales que ya tengo a mi disposición. Prefiero hacerlo de esta manera que elegir el otro extremo (materiales que en mi entorno no están disponibles o fabricar en otra localización).
+            </p>
+            <p>
+                Nos rodeamos de objetos, de hecho, siempre tenemos objetos alrededor, ¿por qué no hacer que destaquen? Ya sea gracias a su forma, a su color o función, o incluso a su propia historia (la del material o el proceso de creación y fabricación). 'Objects for the unordinary life'.
+            </p>
+            <p>
+                Me gusta mostrar el contexto de los objetos que creo, me gusta enseñar la historia que hay detrás, el proceso, el origen…
+            </p>
+            <p>
+                Creo objetos con función y utilidad, concebidos para ser usados, no una mera decoración. Objetos que pueden hacer que tu día funcione mejor. 'Making your day work'.
+            </p>
+            <p>
+                Mis objetos están hechos en el mundo real y son para el mundo real. Pese a que manejo herramientas de diseño y modelado en 2D y 3D prefiero que mis objetos cobren vida en el taller, que definan su forma, dimensiones, características y materiales en el taller, no en el ordenador. Prefiero comenzar a trabajar en un objeto de esta manera, y si es necesario, recurrir al ordenador a posteriori. A veces creo prototipos, pruebo ideas, hago maquetas y después si estoy convencido, fabrico el objeto final.
 
-        <p><b>"OBJECTS FOR THE UNORDINARY LIFE"</b></p>
+            </p>
+            <p>
+                Con el tiempo me he dado cuenta de que muchas cosas que aparentemente lucen bien en el ordenador, no lo hacen tan bien en la vida real.
+            </p>
+            <p>
+                Como ejemplos, el mesibanc nació de una maqueta, el roblón y el butter knife nacieron gracias a mi experimentación con ramas de roble de mi jardín. Jamás podría haberlos diseñado previamente y creado después.
+            </p>
+            <p>
+                Vigas.works es el resultado de la mezcla entre mi curiosidad y mi experimentación.
+            </p>
+            <p>
+                El objetivo es alcanzar un alto nivel de calidad tanto a nivel de materiales como de procesos de fabricación, y sobre todo, no olvidarme de disfrutar el proceso de creación de cada objeto.
+            </p>
+            <p>
+                Si quieres descubrir un poco más sobre mí, puedes hacerlo en mi página web personal.
+            </p>
 
-        <div class="objeto">
+            <hr color="red" size="1px" align="center" />
 
+            <p><u>Contacto:</u></p>
+            <p>
+            Para preguntas generales, ideas o antes de realizar la compra de un objeto hecho bajo pedido utiliza este correo:
 
-              <img src="image/IMG_5809.jpg" alt="yo">
-              <p>Creo objetos con la premisa de que pueda fabricarlos yo mismo, principalmente con las herramientas y materiales que ya tengo a mi disposición. Prefiero hacerlo de esta manera que elegir el otro extremo (materiales que en mi entorno no están disponibles o fabricar en otra localización).</p>
+            <b>j@vigasworks.com</b>
+            </p>
+            <p>Estoy abierto a trabajar con retailers y a realizar productos personalizados. Si alguno de estos dos es tu caso, contacta conmigo utilizando mi correo.</p>
+            <hr color="red" size="1px" align="center" />
 
-              <p>Nos rodeamos de objetos, de hecho, siempre tenemos objetos alrededor, ¿por qué no hacer que destaquen? Ya sea gracias a su forma, a su color o función, o incluso a su propia historia (la del material o el proceso de creación y fabricación). <b>Objects for the unordinary life.</b></p>
+            <p><u>Información importante:</u></p>
+            <p>Antes de realizar la compra de un artículo hecho bajo pedido ponte en contacto conmigo. Es posible que en algún momento la fabricación de objetos bajo pedido no pueda llevarla a cabo.</p>
 
-              <p>Me gusta mostrar el contexto de los objetos que creo, me gusta enseñar la historia que hay detrás, el proceso, el origen…</p>
+            <p>Para los objetos en stock no hace falta contactar previamente. El importe del envío se calculará automáticamente en el checkout. El objeto se enviará lo antes posible.</p>
 
-              <p>Creo objetos con función y utilidad, concebidos para ser usados, no una mera decoración. Objetos que pueden hacer que tu día funcione mejor. <b>Making your day work.</b>
-              </p>
+            <p>El importe en los objetos bajo pedido puede variar en caso de variación en los materiales utilizados.</p>
 
-              <p>Mis objetos están hechos en el mundo real y son para el mundo real. Pese a que manejo herramientas de diseño y modelado en 2D y 3D prefiero que mis objetos cobren vida en el taller, que definan su forma, dimensiones, características y materiales en el taller, no en el ordenador. Prefiero comenzar a trabajar en un objeto de esta manera, y si es necesario, recurrir al ordenador a posteriori. A veces creo prototipos, pruebo ideas, hago maquetas y después si estoy convencido, fabrico el objeto final. </p>
+            <p>Estoy abierto a sugerencias en el acabado de los materiales (barnices, aceites, pinturas…). Si tienes una idea puedes comentármela antes de realizar la compra. Las sugerencias personalizadas pueden representar una variación en el importe del objeto.</p>
 
-              <p>Con el tiempo me he dado cuenta de que muchas cosas que aparentemente lucen bien en el ordenador, no lo hacen tan bien en la vida real.</p>
+            <p>El acabado de los objetos puede variar en función del material utilizado. Por ejemplo, el tono de la madera puede ser ligeramente más claro u oscuro que el de la foto, o presentar unas vetas distintas.</p>
 
-              <p>Como ejemplos, el <i>mesibanc</i> nació de una maqueta, el <i>roblón</i> y el <i>butter knife</i> nacieron gracias a mi experimentación con ramas de roble de mi jardín. Jamás podría haberlos diseñado previamente y creado después.
-              </p>
+            <p>El importe del envío se añadirá al importe del objeto en el caso de los artículos hechos bajo pedido. Determinaremos el importe en función de tu localización y las características del objeto (peso y dimensiones). Repito, es importante contactar conmigo antes de realizar la compra.</p>
+            <p>Permite un tiempo de espera de entre 3 a 6 semanas hasta recibir tu objeto hecho bajo pedido. (Y no te preocupes, suelo ser más rápido que eso).</p>
 
-              <p>Vigas.works es el resultado de la mezcla entre mi curiosidad y mi experimentación.</p>
-              <p>El objetivo es alcanzar un alto nivel de calidad tanto a nivel de materiales como de procesos de fabricación, y sobre todo, no olvidarme de disfrutar el proceso de creación de cada objeto.</p>
-              <p>Si quieres descubrir un poco más sobre mí, puedes hacerlo en mi <a class="one" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vS_4kvhdvD5jz9JjeCQEch5X8WodCVMHmAqI3WswP7bbO9IHj39FKvEG0XKa4zVRJMExvBGSM07jN0x/pubhtml" target="_blank" rel="noopener noreferrer">página web personal.</a></p>
-              <hr color="red" size="1px" align="center" />
-      </div>
+            <p>Todas las ventas son finales. Si en el futuro surge cualquier inconveniente con el uso o funcionamiento de los objetos me prestaré sin lugar a dudas a dar una solución, de la manera que sea más conveniente para ambas partes.</p>
+        </div>
+            
+        </div>
 
-        <div class="objeto">
-              <p><i>Contacto:</i></p>
-              <p>Para preguntas generales, ideas o antes de realizar la compra de un objeto hecho bajo pedido utiliza este correo:</p>
-              <p>j@vigasworks.com</p>
-              <p>Recibe una notificación cuando haya subido un nuevo objeto <a class="one" href="https://vigasworks.mataroa.blog/newsletter/" target="_blank" rel="noopener noreferrer">en este mailing list.</a></p>
-              <p>Estoy abierto a trabajar con retailers y a realizar productos personalizados. Si alguno de estos dos es tu caso, contacta conmigo utilizando mi correo.</p>
-              <hr color="red" size="1px" align="center" />
-      </div>
-
-        <div class="objeto">
-              <p><i>Información importante:</i></p>
-              <p>Antes de realizar la compra de un artículo hecho bajo pedido ponte en contacto conmigo. Es posible que en algún momento la fabricación de objetos bajo pedido no pueda llevarla a cabo.</p>
-
-              <p>Para los objetos en stock no hace falta contactar previamente. El importe del envío se calculará automáticamente en el checkout. El objeto se enviará lo antes posible.</p>
-
-              <p>Estoy abierto a sugerencias en el acabado de los materiales (barnices, aceites, pinturas…). Si tienes una idea puedes comentármela antes de realizar la compra. Las sugerencias personalizadas pueden representar una variación en el importe del objeto.</p>
-
-              <p>El acabado de los objetos puede variar en función del material utilizado. Por ejemplo, el tono de la madera puede ser ligeramente más claro u oscuro que el de la foto, o presentar unas vetas distintas.</p>
-
-              <p>El importe del envío se añadirá al importe del objeto en el caso de los artículos hechos bajo pedido. Determinaremos el importe en función de tu localización y las características del objeto (peso y dimensiones). Repito, es importante contactar conmigo antes de realizar la compra.</p>
-              <p>Permite un tiempo de espera de entre 3 a 6 semanas hasta recibir tu objeto hecho bajo pedido. </p>
-
-              <p>Todas las ventas son finales. Si en el futuro surge cualquier inconveniente con el uso o funcionamiento de los objetos me prestaré sin lugar a dudas a dar una solución, de la manera que sea más conveniente para ambas partes.</p>
-
-
-              <hr color="red" size="1px" align="center" />
-      </div>
-
-    <div class="footer">
-      <a href="/"><img class="footer-picture" src="image/vigas.works marron.svg" alt="LOGOs"></a>
+        <div class="right-side">
+            <div class="image-container">
+                <img src="3/IMG_5809.jpg" alt="Image 1">
+            </div>
+        </div>
     </div>
-
+    
 </body>
-</html
+
+<footer>
+    <div class="footer">
+        <a href="/"><img class="footer-picture" src="image/vigas.works marron.svg" alt="LOGOs"></a>
+      </div>
+</footer>
+
+</html>

@@ -9,669 +9,462 @@
   <meta property="og:image" content="favicon.png">
   <meta property="og:description" content="VIGAS.WORKS">
   <meta property="og:url" content="https://vigasworks.com">
+  <link rel="stylesheet" href="stylesheet.css">
     <title>2</title>
-    <style>
-    body {
-        font-family: helvetica, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: white;
-
-    }
-    p{
-      font-size: 16px;
-      line-height: 20px;
-      font-weight: 500;
-      color: #282828;
-
-
-    }
-    h1{
-      font-size: 16px;
-      line-height: 20px;
-      font-weight: 700;
-      color:  white;
-      background-color: black;
-    }
-    h2{
-      font-size: 16px;
-      line-height: 20px;
-      font-weight: 600;
-      color: red;
-      text-decoration: underline;
-      text-decoration-color:red;
-    }
-    h3{
-      font-size: 16px;
-      line-height: 20px;
-      font-weight: 500;
-      color: grey;
-    }
-
-    a.one {
-      font-family: helvetica, sans-serif;
-      font-size: 16px;
-      line-height: 20px;
-      font-weight: 600;
-      color: #282828;
-      text-decoration: none;
-    }
-    a.one:hover{
-      text-decoration: underline;
-      text-decoration-color: #010eff;
-      color: #010eff;
-
-    }
-    a.header{
-      font-family: helvetica, sans-serif;
-      font-size: 16px;
-      line-height: 20px;
-      font-weight: 700;
-      color: red;
-      text-decoration: none;
-    }
-    a.aviso{
-      font-family: helvetica, sans-serif;
-      font-size: 16px;
-      line-height: 20px;
-      font-weight: 700;
-      color: white;
-      text-decoration: none;
-      background-color: red;
-    }
-    a.index{
-      font-family: helvetica, sans-serif;
-      font-size: 16px;
-      line-height: 20px;
-      font-weight: 700;
-      color: blue;
-      text-decoration: none;
-    }
-    a.index:hover{
-      font-family: helvetica, sans-serif;
-      font-size: 16px;
-      line-height: 20px;
-      font-weight: 700;
-      color: red;
-      text-decoration: none;
-    }
-
-      .container-header {
-          max-width: 500px;
-          margin: 0 auto;
-          padding-top: 10px;
-          padding-bottom: 1px;
-          display: flex;
-          flex-wrap: wrap;
-      }
-      .container {
-          max-width: 500px;
-          margin: 0 auto;
-          padding-top: 10px;
-          padding-bottom: 100px;
-          display: flex;
-          flex-direction: column;
-      }
-      .objeto {
-          max-width: 500px;
-          margin: 0 auto;
-          padding-top: 10px;
-          padding-bottom: 50px;
-          display: block;
-      }
-      .column {
-          flex: 1;
-          margin: none;
-          background-color: none;
-          padding: none;
-          text-align: left;
-      }
-
-
-
-      img{
-        max-width: inherit;
-        margin-top: 10px;
-
-      }
-      .footer {
-       position: fixed;
-       left: 0;
-       bottom: 0;
-       width: 100%;
-       background-color: none;
-       color: white;
-       text-align: center;
-    }
-
-    .footer-picture{
-      width: 900px;
-      filter: invert(10%) sepia(100%) saturate(6013%) hue-rotate(243deg) brightness(98%) contrast(141%);
-
-          }
-    .footer-picture:hover{
-    filter: none;
-        }
-
-
-
-
-
-
- @media (max-width: 768px) {
-     .column {
-         flex-basis: 100%;
-     }
-     .header-picture{
-       width: 550px;
- }
-}
- @media (max-width: 430px) {
-
-   .container-header {
-       max-width: 90%;
-
-       margin: auto;
-       padding: 30px;
-       padding-top: 10px;
-       padding-bottom: 10px;
-       margin-bottom: 5px;
-       background-color: white;
-       align-items: left;
-   }
-
-
-   .container {
-       max-width: 90%;
-
-       margin: auto;
-       padding: 30px;
-       padding-top: 10px;
-       margin-bottom: 40px;
-       background-color: white;
-       align-items: left;
-       display: flex;
-       flex-direction: column;
-   }
-
-
-   .column {
-       flex: 1;
-       margin: none;
-       background-color: #ffffff;
-       padding: none;
-       text-align: left;
-   }
-
-   body {
-       font-family: helvetica, sans-serif;
-       margin: 0;
-       padding: 0;
-       background-color: none;
-   }
-   p{
-     font-size: 13px;
-     line-height: 19px;
-     font-weight: 500;
-     color: #282828;
-
-   }
-   h1{
-     font-size: 13px;
-     line-height: 19px;
-     font-weight: 600;
-     color: white;
-     background-color: black;
-   }
-   h2{
-     font-size: 13px;
-     line-height: 19px;
-     font-weight: 600;
-     color: red;
-     text-decoration: underline;
-     text-decoration-color:red;
-   }
-   h3{
-     font-size: 13px;
-     line-height: 19px;
-     font-weight: 500;
-     color: grey;
-   }
-   a.one {
-     font-family: helvetica, sans-serif;
-     font-size: 13px;
-     line-height: 19px;
-     font-weight: 600;
-     color: #282828;
-     text-decoration: none;
-
-   }
-   a.one:hover{
-     text-decoration: underline;
-     text-decoration-color: #010eff;
-     color: #010eff;
-   }
-   a.header{
-     font-family: helvetica, sans-serif;
-     font-size: 13px;
-     line-height: 19px;
-     font-weight: 700;
-     color: red;
-     text-decoration: none;
-   }
-   a.aviso{
-     font-family: helvetica, sans-serif;
-     font-size: 13px;
-     line-height: 19px;
-     font-weight: 700;
-     color: white;
-     text-decoration: none;
-     background-color: red;
-   }
-   a.index{
-     font-family: helvetica, sans-serif;
-     font-size: 13px;
-     line-height: 19px;
-     font-weight: 700;
-     color: blue;
-     text-decoration: none;
-   }
-   a.index:hover{
-     font-family: helvetica, sans-serif;
-     font-size: 13px;
-     line-height: 19px;
-     font-weight: 700;
-     color: red;
-     text-decoration: none;
-   }
-
-   img{
-     max-width: 100%;
-     margin-top: 1px;
-     margin-bottom: 3px;
-   }
-
-
-     .footer-picture{
-       width: 95%;
-
-  }
-     .footer-picture:hover{
-   filter: invert(10%) sepia(100%) saturate(6013%) hue-rotate(243deg) brightness(98%) contrast(141%);
-  }
-}
-
-
-
-
-
-  </style>
 </head>
 <header>
-  <div class="container-header">
-      <div class="column">
-          <a class="aviso" href="/tienda"> </a>
-          <div>
-          <div class="column">
-          <br>
-          <a class="one" href="/1">1 ⟶</a>
-          <br>
-          <a class="one" href="/2">2 ⟶</a>
-          <br>
-          <a class="one" href="/3">3 ⟶</a>
-          </div>
+
+    <div class="header">
+      <div class="header-item"><a class="one" href="/1">1. tienda</a></div>
+      <div class="header-item"><a class="one" href="/2">2. exploración</a></div>
+      <div class="header-item"><a class="one" href="/3">3. sobre vigas.works</a></div>
+      <div class="header-item"><a class="one" href="/4">4. objetos a medida</a></div>
+      <div class="header-item"><a class="one" href="/5">5. diario</a></div>
+      <div class="header-item"><a class="one" href="mailto:j@vigasworks.com">mail</a></div>
+      <div class="header-item"><a class="one" href="https://www.instagram.com/vigas.works/" target="_blank" rel="noopener noreferrer">ig</a></div>
+      </div>
 
 </header>
+
 <body>
-    <div class="container">
+    <div class="descripcion">
+        <p>Exploración de vigas.works
+            <br>El lugar donde comparto los objetos que no están a la venta pero que pueden convertirse en futuros objetos o servir de inspiración para objetos hechos a medida.
+        </p>
+       
+    </div>
 
-        <p><b>"NOT FOR SALE"</b></p>
-        <p>Una colección de cosas que he hecho a lo largo del tiempo, hay muchas más por supuesto pero solo quiero reunir algunas aquí. Algunas no representan una complejidad especial pero si representan algo importante para mí, ya sea por el momento en el que lo hice o por el proceso. Los objetos están agrupados por año, y como dice el título de la sección, no están a la venta.</p>
-        <div class="column">
-            <p><b>Índice por años</b></p>
+    <hr color="red" size="1px" align="center" />
+    <div class="descripcion-2">
+        <p>Reto personal de hacer un cuchillo con materiales reutilizados, y de afilar acero no afilable.</p>
+        <p><a class="producto" href="/5#2024" target="_blank" rel="noopener noreferrer">Leer más</a></p>
+    </div>
+    <div class="grid-tienda">
+        <div class="grid-producto">
+            <img src="2/IMG_5408 (1).jpg"" alt="Item">
+        </div>
+        <div class="grid-producto">
+            <img src="2/IMG_5407.jpeg"" alt="Item">
+        </div>
+    </div>
 
-            <a class="index" href="#2024">2024</a>
-            <br>
-            <a class="index" href="#2023">2023</a>
-            <br>
-            <a class="index" href="#2022">2022</a>
-            <br>
-            <a class="index" href="#2021">2021</a>
-            <br>
-            <a class="index" href="#2020">2020</a>
-            </div>
-        <div class="objeto">
-              <h2 id="2024">2024</h2>
-              <h3>9/09/2024</h3>
-              <p>Una tulipa para la cocina. Parece que últimamente la cocina es el hogar de todas mis creaciones. Los días ya se van haciendo más cortos y en la cocina necesitábamos crear un espacio mejor iluminado. Se me ocurrió hacer esta tulipa con alambre, en este caso sacado de dos perchas de metal (una para la parte superior y otra para la inferior, enderezado y curvado), restos de loneta de algodón que tenía de otros proyectos y cable textil que compré hace no mucho el cual no pretendía usar para esto pero ya que lo tenía lo aproveché.</p>
-              <p>No tiene mucho misterio, es un rectángulo de tela cosido por cada lateral para contener el alambre y cerrado en forma de tubo. Para sujetarlo al cable y que mantuviese la forma de círculo usé alambre más fino, dos diámetros que se sujetan a unos pequeños hilos que cosí en la parte superior. Después esos alambres se sujetan al cable con una brida. Benditas bridas, always there to help. Algún día igual pienso en otra forma de sujetarla al cable. Inicialmente pensé en colgarla del techo y que la bombilla colgase también, luego pensé que mejor 2x1 y que el cable se encargase de ello. </p>
-              <p>Bastante contento con el resultado y eso que como me quedaba poca pintura (y no quería comprar más por lo de it being on a budget) solo le di un par de capas a las partes que iban a ser visibles de frente, de ahí que en la primera foto todavía haya partes blancas.</p>
-              <img class="column-picture" src="2/compr/IMG_4171.JPG" alt="tulipa">
-              <img class="column-picture" src="2/compr/IMG_4180.jpg" alt="tulipa">
-              <img class="column-picture" src="2/compr/IMG_4181.jpg" alt="tulipa">
-              <img class="column-picture" src="2/compr/IMG_4182.jpg" alt="tulipa">
-              <p>Picture la estantería al fondo a la derecha.</p>
+    <hr color="red" size="1px" align="center" />
+    <div class="descripcion-2">
+        <p>El alambre de dos perchas y un retal de loneta de algodón.</p>
+        <p><a class="producto" href="/5#2024" target="_blank" rel="noopener noreferrer">Leer más</a></p>
+    </div>
+    <div class="grid-tienda">
+        <div class="grid-producto">
+            <img src="2/IMG_4180.jpg"" alt="Item">
+        </div>
+        <div class="grid-producto">
+            <img src="2/IMG_4171.JPG"" alt="Item">
+        </div>
+    </div>
 
-              <hr color="red" size="1px" align="center" />
+    <hr color="red" size="1px" align="center" />
+    <div class="descripcion-2">
+        <p>Estantería para un hueco muerto de la cocina (me quedé sin pintura y decidí pintar solo lo que se iba a ver).</p>
+        <p><a class="producto" href="/5#2024" target="_blank" rel="noopener noreferrer">Leer más</a></p>
+    </div>
+    <div class="grid-tienda">
+        <div class="grid-producto">
+            <img src="2/IMG_4057.jpg"" alt="Item">
+        </div>
+        <div class="grid-producto">
+            <img src="2/IMG_4016.JPG"" alt="Item">
+        </div>
+    </div>
 
-              <h3>5/09/2024</h3>
-              <p>Una estantería para un hueco que tenemos en la cocina. La verdad que ya era hora de hacer algo con ese hueco. Y también era hora de aprovechar algo del metal de la estantería de la que hablé el 12/07/2024.</p>
-              <p>Está hecho con perfiles cuadrados de hierro de 20 x 20 mm soldados, varilla roscada de 6 mm y contrachapado de 10 mm de espesor. Está hecha on a budget, no era mi plan gastar mucho dinero en hacerla, el contrachapado y la varilla roscada me costaron unos 10€. Como iba a ir encajonada la varilla roscada no lleva ningún tipo de tope ya que es imposible que se salga por los laterales, las paredes hacen de tope. Para que el contrachapado no se deslizase hacia delante (porque hacia atrás no puede por la pared de fondo) le pegué unos trozos del propio contrachapado en la parte inferior, que tocan contra la varilla.</p>
-              <p>Bastante contento con el resultado y eso que como me quedaba poca pintura (y no quería comprar más por lo de it being on a budget) solo le di un par de capas a las partes que iban a ser visibles de frente, de ahí que en la primera foto todavía haya partes blancas.</p>
-              <img class="column-picture" src="2/compr/IMG_4016.jpg" alt="estanteria">
-              <img class="column-picture" src="2/compr/IMG_4057.jpg" alt="estanteria">
-              <img class="column-picture" src="2/compr/IMG_4059.jpg" alt="estanteria">
-              <p>Y sí, otra capa de pintura no le vendría nada mal. Si alguna vez vuelvo a comprar rojo le daré. De momento, it does the job, que es para lo que la hice.</p>
+    <hr color="red" size="1px" align="center" />
+    <div class="descripcion-2">
+        <p>Mesa desmontable utilizando el método de Grid Beams. Ignora la pata trasera derecha, por favor. </p>
+    </div>
+    <div class="grid-tienda">
+        <div class="grid-producto">
+            <img src="2/mesa.JPG"" alt="Item">
+         </div>
+        <div class="grid-producto">
+            <img src="2/IMG_8583.jpg"" alt="Item">
+        </div>
+    </div>
 
-              <hr color="red" size="1px" align="center" />
+    <hr color="red" size="1px" align="center" />
+    <div class="descripcion-2">
+        <p>Pequeña estantería reutilizando madera del taller.</p>
+        <p><a class="producto" href="/5#2024" target="_blank" rel="noopener noreferrer">Leer más</a></p>
+    </div>
+    <div class="grid-tienda">
+        <div class="grid-producto">
+            <img src="2/IMG_9526.jpg"" alt="Item">
+        </div>
+        <div class="grid-producto">
+            <img src="2/IMG_7671.JPG"" alt="Item">
+        </div>
+    </div>
 
-              <h3>11/08/2024</h3>
-              <p>Dos rejillas de ventilación con apertura ajustable, una más grande que la otra. Las voy a utilizar en la planta superior de la casa, por donde pasa el tubo de la chimenea (que actualmente se encuentra encerrado en un cubo de pladur) para conseguir aprovechar un poco del calor. Pretendo poner la rejilla grande en la zona inferior del cubo y la pequeña en la parte superior, de esta manera el aire entrará frío por abajo y saldrá caliente por arriba. Espero que el calor residual almacenado ahí adentro cuando tenemos la chimenea encendida abajo consiga aumentar un par de grados la temperatura arriba (la predicción puede sonar un poco exagerada pero sé que se almacena mucho calor ahí adentro).</p>
-              <p>En el interior de las rejillas pegaré un poco de malla fina para evitar que salga polvo del interior del cubo. Y por cierto, decidí hacerlas yo en vez de comprarlas cuando vi lo caras que eran en los brico shops de Francia, me negaba a pagar 18€ (cada una) por un trozo de chapa así que lo hice yo.</p>
-              <img class="column-picture" src="2/compr/IMG_3645.jpg" alt="rejilla">
-              <img class="column-picture" src="2/compr/IMG_3646.jpg" alt="rejilla">
+    <hr color="red" size="1px" align="center" />
+    <div class="descripcion-2">
+        <p>Par de escuadras en acero galvanizado. No sirven para aguantar mucho peso pero son preciosas en mi opinión.</p>
+        <p><a class="producto" href="/5#2024" target="_blank" rel="noopener noreferrer">Leer más</a></p>
+    </div>
+    <div class="grid-tienda">
+        <div class="grid-producto">
+            <img src="2/IMG_8939.JPG"" alt="Item">
+        </div>
+        <div class="grid-producto">
+            <img src="2/IMG_8945.JPG"" alt="Item">
+        </div>
+        <div class="grid-producto">
+            <img src="2/IMG_8941.JPG"" alt="Item">
+        </div>
+    </div>
 
-              <hr color="red" size="1px" align="center" />
-
-              <h3>28/07/2024</h3>
-              <p>Hice este trípode desmontable para cocinar a la leña en el jardín. Está hecho de tres piezas iguales de chapa de acero de 1'5 mm de espesor. Hice varias hendiduras para que el hueco interior fuese ajustable a diferentes tipos de cazuelas o sartenes. Básicamente la idea vino de que quería hacerme un stove pequeño para exterior pero sabía que no lo iba a usar nunca así que para quitarme el gusanillo hice algo que sí sabía que iba a usar, y de hecho, es tremendamente útil. No pesa nada y tampoco ocupa nada de espacio una vez separadas las patas.</p>
-              <p>Sí, no le hice ninguna foto antes de usarlo, de ahí que esté "tan quemadete" jeje.</p>
-              <p>Las patas encajan alternando arriba-abajo para darle firmeza, y no se menea.</p>
-              <img class="column-picture" src="2/compr/IMG_3647.jpg" alt="tripode">
-              <img class="column-picture" src="2/compr/IMG_3649.jpg" alt="tripode">
-              <p>Aquí una imagen de como lo usé el primer día, aunque realmente lo imaginé sujetando una sola sartén ese día cociné una tortilla de patata así que le puse una parrilla encima y soportó dos sartenes a la vez.</p>
-              <img class="column-picture" src="2/compr/tripode.png" alt="tripode">
-
-
-              <hr color="red" size="1px" align="center" />
-
-
-              <h3>12/07/2024</h3>
-              <p>El 30/05/24 escribí sobre una mesa colgante que había hecho para Emily y que daba por fracasada. Finalmente le construí una mesa a Emily, ha tenido que esperar pacientemente casi dos meses. Esta misma semana en mi supermercado de confianza vi que iban a tirar una estantería llena de perfiles de hierro de 2x2 cm, pregunté si me la podía llevar y me dijeron que sí, así que la montamos en la baca del coche y a casa. Mi plan principal es utilizar todo este hierro para construir la base de un roof tent, proyecto que supongo que si llevo a cabo enseñaré en el futuro. </p>
-              <img class="column-picture" src="2/compr/IMG_8534.JPG" alt="mesa">
-              <p>Respecto a la mesa, mi primera idea fue soldar la base y las patas pero luego pensé que sería bastante tediosa para transportar cuando nos volvamos a mudar así que me decanté por no soldar nada y unir los perfiles dos a dos. Este es el principio del método de construcción "Grid Beam" por cierto.</p>
-              <img class="column-picture" src="2/compr/IMG_8583.jpg" alt="mesa">
-              <p>Lo primero que hice fue cortar los perfiles necesarios de la estantería, después los corté a la medida necesaria y seguido taladré agujeros pasantes en ambos extremos en todas las piezas (excepto en las patas). El primer agujero está a 1 cm de la arista y el segundo a 3 cm. Intenté ser todo lo preciso que pude (sin contar con un taladro de banco) en este paso para que a la hora de montar todo fuese lo más smooth posible. Solo una pata dió un poco de guerra en el montaje, en el resto todas las varillas entraron bien por si solas o con un poco de cariño del martillo.</p>
-              <img class="column-picture" src="2/compr/IMG_8558.JPG" alt="mesa">
-              <img class="column-picture" src="2/compr/IMG_8557.JPG" alt="mesa">
-              <p>Me decanté por este color rojo que en mi opinión iba a quedar genial con la madera. Creo que no me equivocaba.</p>
-              <img class="column-picture" src="2/compr/IMG_8576.JPG" alt="mesa">
-              <img class="column-picture" src="2/compr/mesa.JPG" alt="mesa">
-              <p>I'm happy, Emily's happy y ahora tengo todo un despiece de estantería con el que algo debo de hacer.</p>
-              <img class="column-picture" src="2/compr/IMG_8550.JPG" alt="mesa">
-
-
-
-
-              <hr color="red" size="1px" align="center" />
-              <h3>31/05/2024</h3>
-              <p>Estaba cansado de una estantería que hice el verano pasado y decidí transformarla en algo nuevo. Reutilicé las madera de las baldas y alguno de los listones (más algunos que ya tenía en el taller) para hacer esta pequeña estantería. </p>
-              <img class="column-picture" src="2/compr/IMG_7671.JPG" alt="estantería">
-              <img class="column-picture" src="2/compr/IMG_9526.jpg" alt="estantería">
-              <p>El afectado:</p>
-              <img class="column-picture" src="2/compr/IMG_9499 copia.jpg" alt="estantería">
-
-
-              <hr color="red" size="1px" align="center" />
-
-              <h3>30/05/2024</h3>
-              <p>Emily me pidió una mesa, a mi las mesas me parece que ocupan mucho espacio, sobre todo en los sitios donde no quiero tener una aka nuestra habitación. Pero Emily quiere una mesa, y una que esté en nuestra habitación, así que pensé en cómo podía hacer para satisfacer nuestros deseos al mismo tiempo. Me planteé hacer una mesa colgante. La idea inicial (colgarla sin sujección inferior) no era muy útil para trabajar ya que más que una mesa era un columpio. Decidí anclarla al suelo y eso limitó mucho el movimiento pero no mejora la fatiga que provoca el movimiento (aunque leve) de la mesa al escribir. Doy el proyecto por fracasado y Emily continua sin mesa hasta que se me vuelva a ocurrir una idea que nos satisfaga a los dos.</p>
-              <p>En esta foto las cuerdas inferiores todavía no están tensas:</p>
-              <img class="column-picture" src="2/compr/IMG_9499.jpg" alt="mesa colgante">
-              <p>Em testing it out:</p>
-              <img class="column-picture" src="2/compr/IMG_9496.jpg" alt="mesa colgante">
-              <img class="column-picture" src="2/compr/IMG_9501.jpg" alt="mesa colgante">
-
-
-
-              <hr color="red" size="1px" align="center" />
-              <h3>22/05/2024</h3>
-              <p>Encontré la hoja de una guadaña en el granero un día que estaba curioseando. La llevé al taller y lo archivé mentalmente en la carpeta de "cosas que podría hacer: un mango para la guadaña". La tarde siguiente ya estaba haciendo el mango. El primero que hice no me gustó así que hice uno nuevo con ramas de pino que tenía de la poda de este invierno. Por pura casualidad esa misma semana encontré un yunque para picar (acto de estirar y aplanar el filo) la guadaña en un rastro y lo compré. Gracias a ello pude reparar el filo, que estaba en muy mal estado. Soldé la hoja para juntar dos partes que estaban separadas y como arreglar el filo picando me fue imposible (en el estado que estaba) decidí cortar todos los podridos con la radial y empezar desde cero con metal en buen estado. El resultado es que estoy enamorado de la guadaña, y del acto de segar, y gratamente sorprendido de que yo mismo haya sido capaz de restaurar una herramienta y recuperar su funcionalidad.</p>
-              <img class="column-picture" src="2/compr/IMG_7524.jpeg" alt="guadaña">
-              <img class="column-picture" src="2/compr/IMG_7553.JPG" alt="guadaña">
-              <img class="column-picture" src="2/compr/IMG_7556.JPG" alt="guadaña">
-              <img class="column-picture" src="2/compr/IMG_7559.JPG" alt="guadaña">
-              <img class="column-picture" src="2/compr/IMG_7562.JPG" alt="guadaña">
-
-              <hr color="red" size="1px" align="center" />
-              <h3>12/05/2024</h3>
-              <p>¿Recuerdas el marco del filtro del aire que utilicé para hacer los <a class="one" href="/1#colgador">colgadores</a>? Pues sigue dando de sí, esta vez lo he utilizado para hacer un par de escuadras para una estantería de pared. Sé que no son lo más robusto del mundo pero hacen la función para una carga ligera, y en mi opinión, son muy bonitas. En vez de intentar hacer dos piezas iguales lo que hice fue hacer una (asegurándome de que ambos lados fuesen iguales) y después cortarla. </p>
-              <img class="column-picture" src="2/compr/IMG_8939.JPG" alt="escuadra">
-              <img class="column-picture" src="2/compr/IMG_8941.JPG" alt="escuadra">
-              <img class="column-picture" src="2/compr/IMG_8945.JPG" alt="escuadra">
-
-
-              <hr color="red" size="1px" align="center" />
-
-              <h3>10/05/2024</h3>
-              <p>Una pequeña estantería esquinera hecha a partir de una puerta de escalera (las que se suelen utilizar para los niños) y restos de MDF que tenía en el taller. Elegí los barrotes más finos. Los soportes de las baldas son tres triángulos rectángulos de 20 cm de lado. </p>
-
-              <img class="column-picture" src="2/compr/IMG_8925.jpg" alt="esquinero">
-              <img class="column-picture" src="2/compr/IMG_7325 2.JPG" alt="esquinero">
-              <img class="column-picture" src="2/compr/IMG_7326 3.JPG" alt="esquinero">
-
-              <hr color="red" size="1px" align="center" />
-
-              <h3>12/05/2024</h3>
-              <p>Cojín para exterior (e interior) con base impermeable. Mi intención es poder usarlo en el jardín. Mide 70x70 cm, está hecho con la misma tela que el bolso de un poco más abajo (loneta de algodón de 700gsm) y con tela de polipropileno en la parte inferior, encontrada en un rastro. Cierre por botones y solapa. Personalizado con un vinilo de vigas.works.</p>
-              <img class="column-picture" src="2/compr/IMG_8805.JPG" alt="cojin">
-              <img class="column-picture" src="2/compr/IMG_8816.jpg" alt="cojin">
-              <img class="column-picture" src="2/compr/IMG_8809.jpg" alt="cojin">
-              <img class="column-picture" src="2/compr/IMG_8817.jpg" alt="cojin">
-              <img class="column-picture" src="2/compr/IMG_8819.jpg" alt="cojin">
-              <img class="column-picture" src="2/compr/IMG_8696.jpeg" alt="cojin">
-
-              <hr color="red" size="1px" align="center" />
-
-              <h3>10/05/2024</h3>
-              <p>Idea para jabonera de pared ajustable al recipiente.</p>
-              <img class="column-picture" src="2/compr/IMG_7226.jpeg" alt="jabon">
-              <img class="column-picture" src="2/compr/IMG_7230.jpeg" alt="jabon">
-              <hr color="red" size="1px" align="center" />
-
-              <h3>8/04/2024</h3>
-              <p>El 2/02/2024 (un poquito más abajo) escribí sobre unas cartas que había enviado a amigos. En las cartas incluí unos vinilos textiles que había hecho junto a un mensaje explicando como usarlos. Tras unas semanas de espera por fin he recibido varias de las personalizaciones patrocinadas por vigas que los destinatarios han creado.</p>
-              <p>Los vinilos en cuestión hacen referencia a las etiquetas de precio. Quería coger un elemento que es temporal (todos quitamos las etiquetas de precio) y hacerlo permanente, en este caso, sobre superficies textiles.</p>
-              <img class="column-picture" src="2/compr/vinilos.jpeg" alt="vinilos">
-              <p>Así los envíe en las cartas</p>
-              <img class="column-picture" src="2/compr/vinilos2.jpeg" alt="vinilos">
-              <p>El primero que yo pegué sobre una camiseta</p>
-              <img class="column-picture" src="2/compr/vinilos3.jpeg" alt="vinilos">
-              <p>Enrique fue la primera persona que compartió su creación, pegó uno de los vinilos sobre una camiseta blanca. Me encantó la posición que eligió.</p>
-              <img class="column-picture" src="2/compr/enrique.JPG" alt="vinilos">
-              <p>Ángela decidió utilizar el bolsillo trasero de unos vaqueros como su lienzo. Me encanta!</p>
-              <img class="column-picture" src="2/compr/angela.jpeg" alt="vinilos">
-              <p>Harry hizo dos cosas que no me esperaba. Uno de sus vinilos lo puso en un saco que yo mismo serigrafié en 2021 y que él recibió por comprar una prenda de Tradingberry. Vigas ni siquiera existía en mi cabeza por aquella época.</p>
-              <img class="column-picture" src="2/compr/harry1.jpeg" alt="vinilos">
-              <p>La segunda cosa que hizo fue pegar el vinilo en el cuello de una camisa. Brutal.</p>
-              <img class="column-picture" src="2/compr/harry2.jpeg" alt="vinilos">
-
-
-              <hr color="red" size="1px" align="center" />
-              <h3>29/03/2024</h3>
-              <p>Usamos mucha cinta adhesiva a la hora de empaquetar pedidos de <a class="one" href="wwww.dimancheobjects.com">Dimanche</a> y ya estaba cansado de cortarlo con las tijeras así que decidí hacernos un dispensador de cinta.
-              <p>Está hecho con chapa de acero galvanizado de 0'5 mm. Acepta rollos de hasta 25 mm de ancho, generalmente es lo máximo que usamos así que es perfecto para nosotros.
-              <p>La cuchilla está hecha con la misma chapa, cortando en diagonal para hacer una especie de sierra dentada, funciona a las mil maravillas.
-              <p>Tiene un hueco para meter el dedo y coger la cinta y tras terminarlo me di cuenta de que necesitaba algo para sujetar los rollos y que no se moviesen a la hora de tirar de la cinta, de ahí la pequeña pieza que hay entre el rollo y la cuchilla. Es de quita y pon, y va a presión. Cuando quieras cambiar el rollo lo levantas y lo vuelves a poner. Simple. Pensé en soluciones más complicadas pero esta funciona perfectamente. Está hecho con un trozo de chapa que me sobró, y era provisional, pero me parece que se va a quedar así...</p>
-              <img class="column-picture" src="2/compr/IMG_6739.jpg" alt="cinta">
-              <img class="column-picture" src="2/compr/IMG_6728.jpg" alt="cinta">
-              <img class="column-picture" src="2/compr/IMG_6729.jpg" alt="cinta">
-              <img class="column-picture" src="2/compr/IMG_6730.jpg" alt="cinta">
-              <img class="column-picture" src="2/compr/IMG_6733.jpg" alt="cinta">
-              <hr color="red" size="1px" align="center" />
-              <h3>12/03/2024</h3>
-              <p>Bolso en loneta de 700gsm. Tiene dos tipos de asas, corta y larga dispuestas de una forma ingeniosa y que cuando solo usas unas, las otras forman parte de la imagen del bolso. En el interior hay un bolsillo y un hook para colgar un mosquetón (siempre incorporo esto a los bolsos que coso). El interior está forrado con loneta también, aunque esta es más ligera y de color morado. Cuando lo terminé y lo probé lo que salió de mi boca fue: "esto no casca ni a la de 100" así que supongo que conseguí mi objetivo de hacer un bolso casi indestructible.</p>
-              <img class="column-picture" src="2/compr/tote.png" alt="bolso">
-              <img class="column-picture" src="2/compr/IMG_5410.jpeg" alt="bolso">
-              <img class="column-picture" src="2/compr/IMG_5305 2.JPG" alt="bolso">
-              <img class="column-picture" src="2/compr/IMG_5310.JPG" alt="bolso">
-              <img class="column-picture" src="2/compr/IMG_5290 2.jpg" alt="bolso">
-              <hr color="red" size="1px" align="center" />
-              <h3>2/02/2024</h3>
-              <p>Cartas que he enviado a amigos para formar parte de un proyecto colaborativo en el que estoy trabajando con vigas.
-              <p>Si quieres formar parte escríbeme.
-              <p>Más detalles en la carta y cuando tenga el input de los primeros colaboradores.</p>
-              <img class="column-picture" src="2/compr/IMG_5490.png" alt="cartas 1">
-              <hr color="red" size="1px" align="center" />
-              <h3>1/02/2024</h3>
-              <p>He hecho dos estanterías para mi baño a partir de una señal vieja.
-              <p>La señal era de acero galvanizado, usé la parte superior como balda y el palo como anclaje. La balda está remachada a la sujección.
-              <p>Con restos del palo hice dos escuadras que he usado para hacer un toallero, pero como no lo he puesto todavía no tengo fotos.
-              <p>Creo que en el futuro haré una versión de estas baldas en aluminio o inox y estará disponible en la tienda.
-              <p>Por cierto la parte inferior de las baldas está pintada de azul klein.</p>
-              <img class="column-picture" src="2/compr/IMG_5543.png" alt="balda 1">
-              <img class="column-picture" src="2/compr/IMG_5409.JPG" alt="balda 2">
-              <img class="column-picture" src="2/compr/IMG_4807.JPG" alt="balda 3">
-              <img class="column-picture" src="2/compr/IMG_4821.JPG" alt="balda 4">
-              <img class="column-picture" src="2/compr/IMG_5422.png" alt="balda 5">
-              <hr color="red" size="1px" align="center" />
-              <h3>16/02/2024</h3>
-              <p>El proceso de crear una malla-bolso, mi intención es que la misma malla sirva para ser usada estirada (por ejemplo en la baca del coche sujetando algo) y que luego puedas cerrarla y usarla como bolso.
-              <p>Me queda por mejorar la forma de terminarla, los nudos inferiores y pensar algo sobre las asas, que sirvan como puntos de anclaje (malla estirada) y como asas (malla bolso). También he pensado en usar cuerda elástica en los laterales.
-              <p>Uso cuerda paracord, y aunque parezca mentira, en la malla de abajo hay 15 metros de cuerda.
-              <p>He hecho dos versiones, una pequeña (la que tiene la botella) y otra más grande.</p>
-              <img class="column-picture" src="2/compr/IMG_3945 2.jpg" alt="malla 1">
-              <img class="column-picture" src="2/compr/IMG_4361.jpg" alt="malla 2">
-              <hr color="red" size="1px" align="center" />
-              <h3>31/01/2024</h3>
-              <p>Micah Lexier publicó hace unas semanas en IG que el que quisiera podía formar parte de una nueva exposición en la que estaba trabajando. Le escribí para saber más y me dijo que para participar había que enviar una postal a la dirección que te indicaba con el mensaje que él te decía.
-              <p>Me hace mucha ilusión participar en uno de sus proyectos así que lo hice sin dudarlo. Me encanta él como artista y como persona, así que I'm really honored to take part in this.
-              <p>Para participar utilicé una postal de un libro de postales antiguas que encontré en un rastro en Francia. Pese a que solo el reverso va a estar expuesto, decidí poner una pequeña firma en el anverso para la posteridad.</p>
-              <img class="column-picture" src="2/compr/micah1.jpg" alt="micah">
-              <img class="column-picture" src="2/compr/micah2.jpg" alt="micah">
-              <hr color="red" size="1px" align="center" />
-              <h3>28/01/2024</h3>
-              <p>Emily quería una lámpara champiñón, compramos esta tulipa en un rastro por 0'3€ y le hice una pequeña base con dos listones (idea de Emily). El casquillo y el cable son reutilizados de otra lámpara vieja. </p>
-              <img class="column-picture" src="2/compr/IMG_3665.JPG" alt="champiñon">
-              <img class="column-picture" src="2/compr/IMG_4223.JPG" alt="champiñon">
-              <img class="column-picture" src="2/compr/IMG_3626.JPG" alt="champiñon">
-              <hr color="red" size="1px" align="center" />
-              <h3>25/01/2024</h3>
-              <p>Este ya era el último pedacito de chapa que me quedaba, hice un tube squeezer porque sinceramente tenía muchas ganas de tener uno así, aunque el Roblón también sirve para ello, pero bueno, que quería hacer uno. Esta es la segunda versión, apurando ya el último cachito. Funciona de maravilla y auqnue la forma no es la que tenía en mente, no tenía chapa de sobra. Me asombra un montón cómo un simple pliegue puede convertir una chapa endeble en algo tan rígido.</p>
-              <img class="column-picture" src="2/compr/IMG_3617.JPG" alt="tube squeezer">
-              <img class="column-picture" src="2/compr/IMG_3622.JPG" alt="tube squeezer">
-              <img class="column-picture" src="2/compr/IMG_3621.JPG" alt="tube squeezer">
-              <img class="column-picture" src="2/compr/IMG_3554.JPG" alt="tube squeezer">
-              <p>Esta fue la primera versión, que pese a que la forma me gusta mucho más no caí en que al usarlo enseguida se rompería por la torsión. </p>
-              <img class="column-picture" src="2/compr/IMG_3544.JPG" alt="tube squeezer">
-              <img class="column-picture" src="2/compr/IMG_3547.JPG" alt="tube squeezer">
-              <hr color="red" size="1px" align="center" />
-              <p>Cuchillo para mantequilla, este objeto sí estará a la venta dentro de poco. Hecho con roble de mi jardín (como el Roblón).</p>
-              <img class="column-picture" src="2/compr/IMG_3194.JPG" alt="cuchillo para mantequilla">
-              <img class="column-picture" src="2/compr/IMG_3165.JPG" alt="cuchillo para mantequilla">
-              <hr color="red" size="1px" align="center" />
-
-      </div>
-      <div class="objeto">
-            <h2 id="2023">2023</h2>
-            <p>Armario a base de listones para la habitación. No había ningún sitio para nuestra ropa así que hicimos uno al mudarnos.</p>
-            <img class="column-picture" src="2/compr/IMG_7242 2.jpg" alt="armario">
-            <p>Actualmente está cubierto por todos los lados con cortinas de loneta de algodón ya que nos cansamos de que ver nuestra ropa todo el rato, en futuras casas nos gustaría no tener la ropa en el dormitorio.</p>
-            <p>Este perchero lo hice a partir de una llave de las que vienen con las instrucciones de montaje de muebles. Picture la etiqueta en el tote "vigas", quizás una de las primeras cosas al que le puse ese nombre.</p>
-            <img class="column-picture" src="2/compr/IMG_7222.jpg" alt="armario">
-            <img class="column-picture" src="2/compr/IMG_7234.JPG" alt="armario">
-            <p>Em making sure everything is how it should be.</p>
-            <img class="column-picture" src="2/compr/IMG_8508.JPG" alt="armario">
-            <img class="column-picture" src="2/compr/IMG_7198 2.JPG" alt="armario">
-            <p>Nuestra furgoneta.</p>
-            <img class="column-picture" src="2/compr/IMG_7188.JPG" alt="armario">
-            <hr color="red" size="1px" align="center" />
-            
-            <p>Estantería con varilla roscada, surgió a partir de querer extender el concepto del Mesibanc (varilla roscada como base) a otros objetos.</p>
-            <img class="column-picture" src="image/IMG_1049.JPG" alt="estantería">
-            <p>Este candelabro surgió de la misma manera, a partir del Mesibanc.</p>
-            <img class="column-picture" src="2/compr/IMG_3276 2.jpg" alt="candelabro">
-            <hr color="red" size="1px" align="center" />
-
-            <p>Camiseta de manga larga que serigrafié a dos colores</p>
-            <img class="column-picture" src="image/IMG_1626.jpg" alt="camiseta">
-            <hr color="red" size="1px" align="center" />
-
-            <p>Encontré unas diez chapas que creo sirvieron para el alero de un tejado, las lijé a lo basto con la amoladora y con ellas hice una variedad de cosas. Una caja grande y dos pequeñas, una tulipa para una lámpara y un candelabro.</p>
-            <p>El candelabro</p>
-            <img class="column-picture" src="2/compr/IMG_8603.JPG" alt="candelabro">
-            <p>La lámpara</p>
-            <img class="column-picture" src="image/IMG_7381 2.jpg" alt="lámpara">
-            <p>Una de las cajitas pequeñas</p>
-            <img class="column-picture" src="2/compr/IMG_3266.JPG" alt="cajita">
-            <hr color="red" size="1px" align="center" />
-
-            <p>Stickers en ordenadores ajenos</p>
-            <img class="column-picture" src="image/IMG_7121.PNG" alt="ordenador">
-            <hr color="red" size="1px" align="center" />
-
-            <p>Banco a partir de vigas viejas del antiguo tejado</p>
-            <img class="column-picture" src="image/IMG_7736.JPG" alt="banco">
-            <hr color="red" size="1px" align="center" />
+    <hr color="red" size="1px" align="center" />
+    <div class="descripcion-2">
+        <p>Una pequeña estantería esquinera hecha a partir de una puerta de escalera (las que se suelen utilizar para los niños) y restos de MDF que tenía en el taller.</p>
+    </div>
+    <div class="grid-tienda">
+        <div class="grid-producto">
+            <img src="2/IMG_8925.jpg"" alt="Item">
+        </div>
 
     </div>
-    <div class="objeto">
-            <h2 id="2022">2022</h2>
-            <p>Librería de cobre y pino.
-            <p>Esta librería es modular, no tiene ningún tipo de tornillo ni fijación y es fácilmente transportable. Esta hecha con rectángulos de pino y tubería de cobre de 14 mm.
-            <p>Si te fijas en la imagen, en la parte superior de cada tabla de madera hay dos agujeros, la idea es que para crecer en altura dupliques el sistema y lo coloques encima del nivel inferior, sujetado con dos espigas de madera.
-            <p>Usé un segundo nivel pero no tengo foto de eso lamentablemente.</p>
-            <img class="column-picture" src="2/compr/cobre.jpg" alt="estantería de cobre y pino">
-            <hr color="red" size="1px" align="center" />
+    <hr color="red" size="1px" align="center" />
+    <div class="descripcion-2">
+        <p>¿Cómo hacer permanente algo que no lo es? Vinilos que envié a amigos y lo que hicieron con ellos:</p>
+    </div>
+    <div class="grid-tienda">
+        <div class="grid-producto">
+            <img src="2/vinilos3.jpeg"" alt="Item">
+        </div>
+        <div class="grid-producto">
+            <img src="2/harry1.jpeg"" alt="Item">
+        </div>
+        <div class="grid-producto">
+            <img src="2/harry2.jpeg"" alt="Item">
+        </div>
+        <div class="grid-producto">
+            <img src="2/angela.jpeg"" alt="Item">
+        </div>
+        <div class="grid-producto">
+            <img src="2/enrique.JPG"" alt="Item">
+        </div>
+        <div class="grid-producto">
+            <img src="2/IMG_5290 2.jpg"" alt="Item">
+        </div>
 
-            <p>Piedra porta inciensos</p>
-            <img class="column-picture" src="image/IMG_7389.JPG" alt="porta inciensos">
-            <hr color="red" size="1px" align="center" />
+    </div>
 
-            <p>Anillo a partir de un racor de latón de fontanería</p>
-            <img class="column-picture" src="2/compr/anillo3.JPG" alt="anillo">
-            <img class="column-picture" src="2/compr/anillo2.JPG" alt="anillo">
-            <img class="column-picture" src="2/compr/anillo1.JPG" alt="anillo">
-            <hr color="red" size="1px" align="center" />
+    <hr color="red" size="1px" align="center" />
+    <div class="descripcion-2">
+        <p>Cojín para exterior (o suelo).</p>
+    </div>
+    <div class="grid-tienda">
+        <div class="grid-producto">
+            <img src="2/IMG_8805.JPG"" alt="Item">
+         </div>
+        <div class="grid-producto">
+            <img src="2/IMG_8809.jpg"" alt="Item">
+        </div>
+        <div class="grid-producto">
+            <img src="2/IMG_8816.jpg"" alt="Item">   
+        </div>
+        <div class="grid-producto">
+            <img src="2/IMG_8817.jpg"" alt="Item">   
+        </div>
+        <div class="grid-producto">
+            <img src="2/IMG_8819.jpg"" alt="Item">   
+        </div>
+    </div>
 
-            <p>Sublimé esta taza con una pistola de calor, y tengo diez más. Quizás en algún momento haga algo con ellas.</p>
-            <img class="column-picture" src="image/IMG_4697.JPG" alt="taza">
-            <hr color="red" size="1px" align="center" />
+    <hr color="red" size="1px" align="center" />
+    <div class="descripcion-2">
+        <p>Tape dispenser.</p>
+    </div>
+    <div class="grid-tienda">
+        <div class="grid-producto">
+            <img src="2/IMG_6741.jpg"" alt="Item">
+         </div>
+        <div class="grid-producto">
+            <img src="2/IMG_6728.jpg"" alt="Item">
+        </div>
+        <div class="grid-producto">
+            <img src="2/IMG_6729.jpg"" alt="Item">   
+        </div>
+        <div class="grid-producto">
+            <img src="2/IMG_6733.jpg"" alt="Item">   
+        </div>
+    </div>
+    
+    <hr color="red" size="1px" align="center" />
+    <div class="descripcion-2">
+        <p>Par de estanterías reutilizando una señal.</p>
+    </div>
+    <div class="grid-tienda">
+        <div class="grid-producto">
+            <img src="2/IMG_5543.png"" alt="Item">
+         </div>
+        <div class="grid-producto">
+            <img src="2/IMG_5422.png"" alt="Item">
+        </div>
+        <div class="grid-producto">
+            <img src="2/IMG_5409.JPG"" alt="Item">   
+        </div>
+    </div>
+
+    <hr color="red" size="1px" align="center" />
+    <div class="descripcion">
+        <p>2023
+        </p>
+        </div>
 
 
-  </div>
-  <div class="objeto">
-          <h2 id="2021">2021</h2>
-          <p>Conjunto en contrachapado. Funny enough después de hacer la silla vi que Zara home había hecho una muy similar, did that mean anything?</p>
-          <img class="column-picture" src="image/IMG_4524.JPG" alt="conjunto">
-          <hr color="red" size="1px" align="center" />
 
-          <p>Prototipo de silla. Recuerdo que bajé Paseo de Gracia desde Servei Estació con dos listones en el hombro de 2'5 metros cada uno hasta casa. Y luego rehice el camino, para devolver el que me sobró. </p>
-          <img class="column-picture" src="image/IMG_4134.JPG" alt="silla">
-          <hr color="red" size="1px" align="center" />
-          <p>Banco a partir de madera encontrada en la calle</p>
-          <img class="column-picture" src="image/BANCO.JPG" alt="banco de madera">
-          <img class="column-picture" src="2/bancotapado.JPG" alt="banco de madera">
+    <hr color="red" size="1px" align="center" />
+    <div class="descripcion-2">
+        <p>Armario usando solo listones. Posteriormente lo tapé con dos cortinas de tela.</p>
+    </div>
+    <div class="grid-tienda">
+        <div class="grid-producto">
+            <img src="2/IMG_7242 2.jpg"" alt="Item">
+         </div>
+    </div>
+    
 
-          <hr color="red" size="1px" align="center" />
-          <p>Lámpara de metacrilato y tablerillo. Hice esta lámpara con la intención de usarla como cartel luminoso más que para iluminar. Quería ponerle un vinilo en el metacrilato, uno de vigas concretamente, pero finalmente no lo hice y me alegro.</p>
-          <img class="column-picture" src="2/compr/IMG_3955.JPG" alt="lampara">
-          <img class="column-picture" src="2/compr/IMG_3968.jpeg" alt="lampara">
-          <hr color="red" size="1px" align="center" />
+    <hr color="red" size="1px" align="center" />
+    <div class="descripcion-2">
+        <p>Lámpara colgante con tanto con chapa como cableado reutilizados.</p>
+    </div>
+    <div class="grid-tienda">
+        <div class="grid-producto">
+            <img src="2/IMG_7381 2.jpg"" alt="Item">
+         </div>
+        <div class="grid-producto">
+            <img src="2/IMG_7380 2.JPG"" alt="Item">
+        </div>
+        <div class="grid-producto">
+            <img src="2/IMG_9211.PNG"" alt="Item">   
+        </div>
+        <div class="grid-producto">
+            <img src="2/IMG_9214 2.JPG"" alt="Item">   
+        </div>
+    </div>
 
-          <p>Encontré este armazón de silla una tarde al lado de un contenedor. Alguien debió dejarlo allí. Yo ví que podía hacer algo con él y lo cogí. Le quité todo el óxido y como no tenía ni idea de su configuración original, para rehacerlo utilicé las dimensiones de asiento y respaldo que me parecieron. Fue mi primera vez tapizando un mueble.</p>
-          <img class="column-picture" src="2/compr/butaca1.JPG" alt="conjunto">
-          <img class="column-picture" src="2/compr/butaca2.JPG" alt="conjunto">
-          <img class="column-picture" src="2/compr/butaca3.JPG" alt="conjunto">
-          <hr color="red" size="1px" align="center" />
+    <hr color="red" size="1px" align="center" />
+    <div class="descripcion-2">
+        <p>Camiseta a dos colores que serigrafié en verano, en manga larga y corta.</p>
+    </div>
+    <div class="grid-tienda">
+        <div class="grid-producto">
+            <img src="2/IMG_1626.jpg"" alt="Item">
+         </div>
+         <div class="grid-producto">
+            <img src="2/IMG_0698.JPG"" alt="Item">
+         </div>
+    </div>
 
-      </div>
+    <hr color="red" size="1px" align="center" />
+    <div class="descripcion-2">
+        <p>Candelabro reutilizando chapa.</p>
+    </div>
+    <div class="grid-tienda">
+        <div class="grid-producto">
+            <img src="2/IMG_8603.JPG"" alt="Item">
+         </div>
+    </div>
 
-    <div class="objeto">
-            <h2 id="2020">2020</h2>
+    <hr color="red" size="1px" align="center" />
+    <div class="descripcion-2">
+        <p>Stickers en ordenadores ajenos.</p>
+    </div>
+    <div class="grid-tienda">
+        <div class="grid-producto">
+            <img src="2/IMG_7121.PNG"" alt="Item">
+         </div>
+    </div>
 
-            <p>Este mueble tiene un sitio especial en mí. Me lo pidió Emily, para poner libros y cositas. Por aquel entonces solo tenía una sierra de calar prestada por mi suegro y un destornillador de estrella. Corté la madera en la cocina, te puedes imaginar el burbujón a serrín. Y para atornillarlo una aventura, sin taladro y haciendo los agujeros a la fuerza con el tornillo y el destornillador. Obviamente las uniones son con escuadras, no había otra manera por aquel entonces. Cuatro años más tarde y cuatro mudanzas más tarde, still standing!</p>
-            <img class="column-picture" src="2/compr/primero.JPG" alt="conjunto">
-            <hr color="red" size="1px" align="center" />
+    <hr color="red" size="1px" align="center" />
+    <div class="descripcion-2">
+        <p>Banco a partir de vigas del antiguo tejado.</p>
+    </div>
+    <div class="grid-tienda">
+        <div class="grid-producto">
+            <img src="2/IMG_7736.JPG"" alt="Item">
+         </div>
+    </div>
+
+    <hr color="red" size="1px" align="center" />
+    <div class="descripcion">
+        <p>2022
+        </p>
+        </div>
+
+    <hr color="red" size="1px" align="center" />
+    <div class="descripcion-2">
+        <p>Piedra porta inciensos.</p>
+    </div>
+    <div class="grid-tienda">
+        <div class="grid-producto">
+            <img src="2/IMG_7389.JPG"" alt="Item">
+         </div>
+    </div>
+
+    <hr color="red" size="1px" align="center" />
+    <div class="descripcion-2">
+        <p>Tazas, hice 10 de estas.</p>
+    </div>
+    <div class="grid-tienda">
+        <div class="grid-producto">
+            <img src="2/IMG_3673.JPG"" alt="Item">
+         </div>
+    </div>
+
+    <hr color="red" size="1px" align="center" />
+    <div class="descripcion-2">
+        <p>Self-explanatory keychain.</p>
+    </div>
+    <div class="grid-tienda">
+        <div class="grid-producto">
+            <img src="2/IMG_4783.jpg"" alt="Item">
+         </div>
+    </div>
+
+    <hr color="red" size="1px" align="center" />
+    <div class="descripcion-2">
+        <p>Anillo hecho a partir de un racor de latón.</p>
+    </div>
+    <div class="grid-tienda">
+        <div class="grid-producto">
+            <img src="2/anillo.JPG"" alt="Item">
+        </div>
+        <div class="grid-producto">
+            <img src="2/anillo2.JPG"" alt="Item">
+        </div>
+        <div class="grid-producto">
+            <img src="2/anillo3.JPG"" alt="Item">
+        </div>
+       
+    </div>
+
+    <hr color="red" size="1px" align="center" />
+    <div class="descripcion-2">
+        <p>Estantería apilable para libros reutilizando tubos de cobre.</p>
+    </div>
+    <div class="grid-tienda">
+        <div class="grid-producto">
+            <img src="2/cobre.JPG"" alt="Item">
+        </div>
+
+       
+    </div>
 
 
 
-  </div>
+    <hr color="red" size="1px" align="center" />
+    <div class="descripcion">
+        <p>2021
+        </p>
+        </div>
 
 
-    <div class="footer">
-      <a href="/"><img class="footer-picture" src="image/vigas.works marron.svg" alt="LOGOs"></a>
+
+    <hr color="red" size="1px" align="center" />
+    <div class="descripcion-2">
+        <p>Banco a partir de madera donada.</p>
+    </div>
+    <div class="grid-tienda">
+        <div class="grid-producto">
+            <img src="2/BANCO.JPG"" alt="Item">
+        </div>
+        <div class="grid-producto">
+            <img src="2/bancotapado.JPG"" alt="Item">
+        </div>
+    </div>
+
+    <hr color="red" size="1px" align="center" />
+    <div class="descripcion-2">
+        <p>Silla en contrachapado. Posiblemente la primera vez que utilicé una sierra circular eléctrica. La otra pieza fue la segunda.</p>
+    </div>
+    <div class="grid-tienda">
+        <div class="grid-producto">
+            <img src="2/IMG_3721 2.jpg"" alt="Item">
+        </div>
+        <div class="grid-producto">
+            <img src="2/IMG_4524.JPG"" alt="Item">
+        </div>
+    </div>
+
+    <hr color="red" size="1px" align="center" />
+    <div class="descripcion-2">
+        <p>Sillón tapizado a través de una estructura encontrada en la calle.</p>
+    </div>
+    <div class="grid-tienda">
+        <div class="grid-producto">
+            <img src="2/butaca1.JPG"" alt="Item">
+        </div>
+        <div class="grid-producto">
+            <img src="2/butaca2.JPG"" alt="Item">
+        </div>
+        <div class="grid-producto">
+            <img src="2/butaca3.JPG"" alt="Item">
+        </div>
+       
+    </div>
+
+    <hr color="red" size="1px" align="center" />
+    <div class="descripcion-2">
+        <p>Sillón utilizando OSB encontrado en la calle.</p>
+    </div>
+    <div class="grid-tienda">
+        <div class="grid-producto">
+            <img src="2/sillon.JPG"" alt="Item">
+        </div>
+        <div class="grid-producto">
+            <img src="2/IMG_3761.jpg"" alt="Item">
+        </div>
+       
+    </div>
+    <hr color="red" size="1px" align="center" />
+    <div class="descripcion-2">
+        <p>Silla que luego pinte de naranja (resplado y asiento).</p>
+    </div>
+    <div class="grid-tienda">
+        <div class="grid-producto">
+            <img src="2/IMG_1821 2.JPG"" alt="Item">
+        </div>
+        <div class="grid-producto">
+            <img src="2/IMG_1833.JPG"" alt="Item">
+        </div>
+       
+    </div>
+
+    <hr color="red" size="1px" align="center" />
+<div class="descripcion">
+    <p>2019
+    </p>
+    </div>
+
+
+    <hr color="red" size="1px" align="center" />
+    <div class="descripcion-2">
+        <p>El que lo empezó todo. Antes de siquiera existir vigas.works, atornillado con destornillador manual y cortado con una sierra de calar de mi suegro en la cocina.</p>
+    </div>
+    <div class="grid-tienda">
+        <div class="grid-producto">
+            <img src="2/primero.JPG"" alt="Item">
+        </div>
     </div>
 
 </body>
-</html
+
+
+
+
+<footer>
+    <div class="footer">
+        <a href="/"><img class="footer-picture" src="image/vigas.works marron.svg" alt="LOGOs"></a>
+      </div>
+</footer>
+
+</html>

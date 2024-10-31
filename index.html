@@ -9,305 +9,34 @@
   <meta property="og:image" content="favicon.png">
   <meta property="og:description" content="VIGAS.WORKS">
   <meta property="og:url" content="https://vigasworks.com">
+  <link rel="stylesheet" href="stylesheet.css">
     <title>0</title>
-    <style>
-    body {
-        font-family: helvetica, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: white;
-
-    }
-    p{
-      font-size: 16px;
-      line-height: 20px;
-      font-weight: 500;
-      color: #282828;
-
-
-    }
-    h1{
-      font-size: 16px;
-      line-height: 20px;
-      font-weight: 700;
-      color:  white;
-      background-color: black;
-    }
-    h2{
-      font-size: 16px;
-      line-height: 20px;
-      font-weight: 600;
-      color: red;
-      text-decoration: underline;
-      text-decoration-color:red;
-    }
-    h3{
-      font-size: 16px;
-      line-height: 20px;
-      font-weight: 500;
-      color: grey;
-    }
-
-    a.one {
-      font-family: helvetica, sans-serif;
-      font-size: 16px;
-      line-height: 20px;
-      font-weight: 600;
-      color: #282828;
-      text-decoration: none;
-    }
-    a.one:hover{
-      text-decoration: underline;
-      text-decoration-color: #010eff;
-      color: #010eff;
-
-    }
-    a.header{
-      font-family: helvetica, sans-serif;
-      font-size: 16px;
-      line-height: 20px;
-      font-weight: 700;
-      color: red;
-      text-decoration: none;
-    }
-    a.aviso{
-      font-family: helvetica, sans-serif;
-      font-size: 16px;
-      line-height: 20px;
-      font-weight: 700;
-      color: red;
-      text-decoration: none;
-      background-color: none;
-
-    }
-
-      .container-header {
-          max-width: 500px;
-          margin: 0 auto;
-          padding-top: 10px;
-          padding-bottom: 1px;
-          display: flex;
-          flex-wrap: wrap;
-      }
-      .container {
-          max-width: 500px;
-          margin: 0 auto;
-          padding-top: 10px;
-          padding-bottom: 50px;
-          display: flex;
-          flex-wrap: wrap;
-      }
-      .objeto {
-          max-width: 500px;
-          margin: 0 auto;
-          padding-top: 10px;
-          padding-bottom: 50px;
-          display: block;
-      }
-      .column {
-          flex: 1;
-          margin: none;
-          background-color: none;
-          padding: none;
-          text-align: left;
-      }
-
-
-
-      img{
-        max-width: inherit;
-        margin-top: 10px;
-
-      }
-      .footer {
-       position: fixed;
-       left: 0;
-       bottom: 0;
-       width: 100%;
-       background-color: none;
-       color: white;
-       text-align: center;
-    }
-
-    .footer-picture{
-      width: 900px;
-      filter: invert(10%) sepia(100%) saturate(6013%) hue-rotate(243deg) brightness(98%) contrast(141%);
-
-          }
-    .footer-picture:hover{
-    filter: none;
-        }
-
-
-
-
-
- @media (max-width: 768px) {
-     .column {
-         flex-basis: 100%;
-     }
-     .header-picture{
-       width: 550px;
- }
-}
- @media (max-width: 430px) {
-
-   .container-header {
-       max-width: 90%;
-
-       margin: auto;
-       padding: 30px;
-       padding-top: 10px;
-       padding-bottom: 10px;
-       margin-bottom: 5px;
-       background-color: white;
-       align-items: left;
-   }
-
-
-   .container {
-       max-width: 90%;
-
-       margin: auto;
-       padding: 30px;
-       padding-top: 10px;
-       margin-bottom: 40px;
-       background-color: white;
-       align-items: center;
-   }
-
-
-   .column {
-       flex: 1;
-       margin: none;
-       background-color: #ffffff;
-       padding: none;
-       text-align: left;
-   }
-
-   body {
-       font-family: helvetica, sans-serif;
-       margin: 0;
-       padding: 0;
-       background-color: none;
-   }
-   p{
-     font-size: 13px;
-     line-height: 19px;
-     font-weight: 500;
-     color: #282828;
-
-   }
-   h1{
-     font-size: 13px;
-     line-height: 19px;
-     font-weight: 600;
-     color: white;
-     background-color: black;
-   }
-   h2{
-     font-size: 13px;
-     line-height: 19px;
-     font-weight: 600;
-     color: red;
-     text-decoration: underline;
-     text-decoration-color:red;
-   }
-   h3{
-     font-size: 13px;
-     line-height: 19px;
-     font-weight: 500;
-     color: grey;
-   }
-   a.one {
-     font-family: helvetica, sans-serif;
-     font-size: 13px;
-     line-height: 19px;
-     font-weight: 600;
-     color: #282828;
-     text-decoration: none;
-
-   }
-   a.one:hover{
-     text-decoration: underline;
-     text-decoration-color: #010eff;
-     color: #010eff;
-   }
-   a.header{
-     font-family: helvetica, sans-serif;
-     font-size: 13px;
-     line-height: 19px;
-     font-weight: 700;
-     color: red;
-     text-decoration: none;
-   }
-   a.aviso{
-     font-family: helvetica, sans-serif;
-     font-size: 13px;
-     line-height: 19px;
-     font-weight: 700;
-     color: white;
-     text-decoration: none;
-     background-color: red;
-
-   }
-   img{
-     max-width: 100%;
-     margin-top: 20px;
-
-   }
-
-
-     .footer-picture{
-       width: 95%;
-
-  }
-     .footer-picture:hover{
-   filter: invert(10%) sepia(100%) saturate(6013%) hue-rotate(243deg) brightness(98%) contrast(141%);
-  }
-}
-
-
-
-
-
-  </style>
 </head>
 <header>
-  <div class="container-header">
-      <div class="column">
-          <a class="aviso" href="https://vigasworks.mataroa.blog/newsletter/" target="_blank" rel="noopener noreferrer">Nuevo objeto ya disponible: "el rollo"</i></a>
 
-          <div>
-          <div class="column">
-          <br>
-          <a class="one" href="/1">1 ⟶</a>
-          <br>
-          <a class="one" href="/2">2 ⟶</a>
-          <br>
-          <a class="one" href="/3">3 ⟶</a>
-          </div>
-
-</header>
-<body>
-    <div class="container">
-
-
-
-        <div class="objeto">
-
-
-              <img src="1/compr/price.png" alt="intro">
-
-
-
-
+    <div class="header">
+        <div class="header-item"><a class="one" href="/1">1. tienda</a></div>
+        <div class="header-item"><a class="one" href="/2">2. exploración</a></div>
+        <div class="header-item"><a class="one" href="/3">3. sobre vigas.works</a></div>
+        <div class="header-item"><a class="one" href="/4">4. objetos a medida</a></div>
+        <div class="header-item"><a class="one" href="/5">5. diario</a></div>
+        <div class="header-item"><a class="one" href="mailto:j@vigasworks.com">mail</a></div>
+        <div class="header-item"><a class="one" href="https://www.instagram.com/vigas.works/" target="_blank" rel="noopener noreferrer">ig</a></div>
       </div>
 
+</header>
 
-    <div class="footer">
-      <a href="/"><img class="footer-picture" src="image/vigas.works marron.svg" alt="LOGOs"></a>
+<body>
+    <div class="indice">
+        <img class="indice" src="0/floppy disk.png" alt="intro">
     </div>
-
+    
 </body>
-</html
+
+<footer>
+    <div class="footer">
+        <a href="/"><img class="footer-picture" src="image/vigas.works marron.svg" alt="LOGOs"></a>
+      </div>
+</footer>
+
+</html>

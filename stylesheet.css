@@ -1,0 +1,314 @@
+
+/* HEADER HEADER HEADER - ALL - */
+
+.header {
+  position: sticky;
+  top: 0;
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly */
+    max-width: 100%;
+    align-items: center;
+    padding-bottom: 30px;
+    background-color: none; 
+    margin-bottom: 60px; 
+    margin-top: 20px;
+    border-bottom: 1px dotted red;
+
+  }
+
+  .header-item {
+    color: #442d15;
+    font-size: 15px;
+    text-align: center;
+    padding: none;
+    background-color: none;
+    margin: 0 10px; /* Space between items */
+  }
+.header a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #442d15;
+}
+.header a:hover{
+    text-decoration: underline;
+    text-decoration-color: red;
+    color: red;
+}
+
+
+  /* BODY BODY BODY - ALL - */
+
+  body{
+    margin-bottom: 100px;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: helvetica, sans-serif;
+  }
+
+  p{
+    font-size: 15px;
+    color: #442d15;
+  }
+  .indice{
+    max-width: 100%;
+    align-items: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -100;
+  }
+  img.indice{
+    max-width: 600px;
+    height: auto;
+  }
+  
+  .descripcion {
+    display: block;
+    max-width: 400px;
+  }
+  .descripcion p{
+    color: red;
+    font-weight: 600;
+  }
+  .descripcion-2 {
+    display: block;
+    max-width: 400px;
+  }
+  .descripcion-2 p {
+    color: #442d15;
+    font-weight: 600;
+  }
+  .descripcion-4 {
+    display: block;
+    max-width: 550px;
+  }
+  .descripcion-4 p {
+    color: #442d15;
+    font-weight: 600;
+  }
+  .descripcion-4 a {
+    color: #442d15;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: #442d15;
+  }
+  .descripcion-4 a:hover{
+      text-decoration: underline;
+      text-decoration-color: red;
+      color: red;
+  }
+  
+
+  /*GRID GRID GRID 1 - 2 - 4 */
+
+  .grid-tienda {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-gap: 20px; /* Space between items */
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .grid-producto {
+    background-color: white; /* Background for each item */
+    border-radius: none;
+    box-shadow: none;
+    overflow: hidden; /* Ensure content fits inside */
+    
+  }
+  .grid-producto img {
+    width: 100%; /* Make the image responsive */
+    height: auto;
+  }
+  .grid-producto .content {
+    padding-top: 5px;
+    text-align: left; /* Center-align text */
+  }
+  .grid-producto .content h3 {
+    margin: 0;
+    font-size: 15px;
+   line-height: 20px;
+   font-weight: 600;
+   color: #442d15;
+  }
+  .grid-producto .content p {
+    font-size: 15px;
+   line-height: 19px;
+   font-weight: 500;
+   color: #442d15;
+   margin-top: 0px;
+  }
+  .grid-producto .content a {
+    display: inline-block;
+    margin-top: 0px;
+    font-size: 15px;
+    color: red; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+  }
+  .grid-producto .content a:hover {
+    color: #442d15; /* Link color */
+    text-decoration: underline; /* Remove underline */
+    text-decoration-color: #442d15;
+  }
+
+  /* PRODUCTO PRODUCTO PRODUCTO */
+
+  .container-producto {
+    display: flex;
+    height: 100vh; /* 100% of the viewport height */
+    flex-direction: row; /* Default is row, so it’s a two-column layout */
+}
+
+.left-side {
+    width: 50%; /* 50% width on larger screens */
+    padding: none;
+    background-color: white;
+    overflow-y: auto;
+}
+.left-side .text {
+    max-width: 65%;
+}
+.left-side::-webkit-scrollbar {
+    display: none;
+}
+
+.right-side {
+    width: 50%; /* 50% width on larger screens */
+    background-color: #fff;
+    overflow-y: scroll;
+    position: relative;
+}
+.right-side .text-diario {
+    max-width: 80%;
+}
+.right-side::-webkit-scrollbar {
+    display: none;
+}
+
+.image-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+a.producto{
+    font-weight: 500;
+    text-decoration: none;
+    color: #442d15;
+}
+a.producto:hover{
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-color: red;
+    color: red;
+}
+
+
+    /* FOOTER FOOTER FOOTER - ALL - */
+
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+ }
+
+ .footer-picture{
+   width: 400px;
+}
+.footer-picture:hover{
+    filter: invert(10%) sepia(100%) saturate(6013%) hue-rotate(243deg) brightness(98%) contrast(141%);
+ }
+
+
+
+
+
+@media (max-width: 600px)
+{
+
+    p {
+        font-size: 13px;
+    }
+
+    .grid-producto .content p {
+        font-size: 13px;
+        line-height: 15px;
+    }
+    .grid-producto .content a {
+        font-size: 13px;
+        color: red; 
+      }
+   
+ /* HEADER HEADER HEADER - ALL - */
+
+    .header {
+        flex-direction: column; /* Stack items in a column */
+        align-items: flex-start;
+        justify-content: flex-start; /* Align items at the start */
+        
+        
+      }
+
+    .header-item {
+        margin: none; /* Add space between items when in column */
+        text-align: left;
+      }
+
+
+/* INDICE INDICE INDICE */
+
+img.indice{
+    max-width: 300px;
+    height: auto;
+  }
+  /*GRID GRID GRID 1 - 2 - 4 */
+
+    .grid-tienda {
+        grid-template-columns: 1fr; /* Switch to a single column */
+      }
+
+
+  /* PRODUCTO PRODUCTO PRODUCTO */
+
+     .container-producto {
+        flex-direction: column; /* Stack the sections in a column */
+        height: auto; /* Allow the container to grow with content */
+    }
+
+    .left-side, .right-side {
+        width: 100%; /* Full width for both sides */
+        height: auto; /* Let them grow with content */
+    }
+    .left-side .text {
+        max-width: 100%;
+    }
+
+    /*DIARIO DIARIO DIARIO */
+
+    .right-side .text-diario {
+        max-width: 100%;
+    }
+
+    .right-side {
+        overflow-y: auto; /* Disable scroll on right-side in mobile view */
+    }
+
+    .image-container {
+        padding: 0;
+    }
+
+       /* FOOTER FOOTER FOOTER - ALL - */
+    .footer-picture{
+    width: 200px;
+    }
+
+}
