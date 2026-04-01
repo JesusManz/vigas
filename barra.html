@@ -14,15 +14,7 @@
 </head>
 <header>
 
-    <div class="header">
-        <div class="header-item"><a class="one" href="/1">1. tienda</a></div>
-        <div class="header-item"><a class="one" href="/2">2. exploración</a></div>
-        <div class="header-item"><a class="one" href="/3">3. sobre vigas.works</a></div>
-        <div class="header-item"><a class="one" href="/4">4. objetos a medida</a></div>
-        <div class="header-item"><a class="one" href="/5">5. diario</a></div>
-        <div class="header-item"><a class="one" href="mailto:j@vigasworks.com">mail</a></div>
-        <div class="header-item"><a class="one" href="https://www.instagram.com/vigas.works/" target="_blank" rel="noopener noreferrer">ig</a></div>
-      </div>
+<div id="header-container"></div>
 
 </header>
 
@@ -55,11 +47,13 @@
             <p>
                 **El acero de este objeto es reutilizado, por lo que la apariencia superficial de tu barra puede ser diferente a la de las imágenes. También puede presentar alguna imperfección superficial, aunque siempre intento elegir las piezas en mejor estado.
             </p>
-            <p><i>1 unidad en stock</i></p>
+            <p><i>Objeto bajo pedido</i></p>
             <p>
-                45€
+                85€
             </p>
-            <p><a class="producto" href="https://buy.stripe.com/00gg2qelKcko5eo00h" target="_blank" rel="noopener noreferrer">Comprar ⟶</a></p>
+                <p>
+        <p><a class="producto" href="mailto:j@vigasworks.com" target="_blank" rel="noopener noreferrer">Escríbeme ⟶</a></p>
+      </p>
         </div>
             
         </div>
@@ -85,5 +79,36 @@
         <a href="/"><img class="footer-picture" src="image/vigas.works marron.svg" alt="LOGOs"></a>
       </div>
 </footer>
+
+<script>
+document.getElementById('buy-button').addEventListener('click', async () => {
+  try {
+    // Solo enviamos id del producto y cantidad 1
+    const payload = {
+      items: [{ id: 'barra', cantidad: 1 }]
+    };
+
+    const res = await fetch('/api/create-checkout-session', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    });
+
+    const data = await res.json();
+
+    // Redirige al Checkout de Stripe
+    window.location.href = data.url;
+
+  } catch (err) {
+    console.error('Error al crear la sesión:', err);
+    alert('Hubo un error, inténtalo de nuevo.');
+  }
+});
+</script>
+
+  <script type="module">
+    import { loadHeader } from './header.js';
+    loadHeader(); 
+  </script>
 
 </html>
